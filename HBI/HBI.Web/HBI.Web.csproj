@@ -1808,6 +1808,31 @@
     <TypeScriptCompile Include="Modules\BasicSamples\Grids\DragDropInTreeGrid\DragDropSampleGrid.ts" />
     <TypeScriptCompile Include="Modules\BasicSamples\Grids\DragDropInTreeGrid\DragDropSampleDialog.ts" />
     <TypeScriptCompile Include="Scripts\typings\serenity\Serenity.CoreLib.d.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\OLTP.ExameRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLTP.ExameService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Modules\OLTP\Exame\ExameIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\OLTP\Exame\ExameDialog.ts" />
+    <TypeScriptCompile Include="Modules\OLTP\Exame\ExameGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\OLTP.ExameForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Content\site\site.oltp.less" />
+    <TypeScriptCompile Include="Imports\ServerTypings\OLTP.HistoricoRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLTP.HistoricoService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Modules\OLTP\Historico\HistoricoIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\OLTP\Historico\HistoricoDialog.ts" />
+    <TypeScriptCompile Include="Modules\OLTP\Historico\HistoricoGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\OLTP.HistoricoForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLTP.MedicoRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLTP.MedicoService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Modules\OLTP\Medico\MedicoIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\OLTP\Medico\MedicoDialog.ts" />
+    <TypeScriptCompile Include="Modules\OLTP\Medico\MedicoGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\OLTP.MedicoForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLTP.PacienteRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLTP.PacienteService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Modules\OLTP\Paciente\PacienteIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\OLTP\Paciente\PacienteDialog.ts" />
+    <TypeScriptCompile Include="Modules\OLTP\Paciente\PacienteGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\OLTP.PacienteForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -2128,6 +2153,31 @@
     <Compile Include="Modules\BasicSamples\Grids\DragDropInTreeGrid\DragDropSampleForm.cs" />
     <Compile Include="Modules\BasicSamples\Grids\DragDropInTreeGrid\DragDropSampleRepository.cs" />
     <Compile Include="Modules\BasicSamples\Grids\DragDropInTreeGrid\DragDropSampleEndpoint.cs" />
+    <Compile Include="Modules\OLTP\Exame\ExameRow.cs" />
+    <Compile Include="Modules\OLTP\Exame\ExameRepository.cs" />
+    <Compile Include="Modules\OLTP\Exame\ExameEndpoint.cs" />
+    <Compile Include="Modules\OLTP\Exame\ExamePage.cs" />
+    <Compile Include="Modules\OLTP\Exame\ExameColumns.cs" />
+    <Compile Include="Modules\OLTP\Exame\ExameForm.cs" />
+    <Compile Include="Modules\OLTP\OLTPNavigation.cs" />
+    <Compile Include="Modules\OLTP\Historico\HistoricoRow.cs" />
+    <Compile Include="Modules\OLTP\Historico\HistoricoRepository.cs" />
+    <Compile Include="Modules\OLTP\Historico\HistoricoEndpoint.cs" />
+    <Compile Include="Modules\OLTP\Historico\HistoricoPage.cs" />
+    <Compile Include="Modules\OLTP\Historico\HistoricoColumns.cs" />
+    <Compile Include="Modules\OLTP\Historico\HistoricoForm.cs" />
+    <Compile Include="Modules\OLTP\Medico\MedicoRow.cs" />
+    <Compile Include="Modules\OLTP\Medico\MedicoRepository.cs" />
+    <Compile Include="Modules\OLTP\Medico\MedicoEndpoint.cs" />
+    <Compile Include="Modules\OLTP\Medico\MedicoPage.cs" />
+    <Compile Include="Modules\OLTP\Medico\MedicoColumns.cs" />
+    <Compile Include="Modules\OLTP\Medico\MedicoForm.cs" />
+    <Compile Include="Modules\OLTP\Paciente\PacienteRow.cs" />
+    <Compile Include="Modules\OLTP\Paciente\PacienteRepository.cs" />
+    <Compile Include="Modules\OLTP\Paciente\PacienteEndpoint.cs" />
+    <Compile Include="Modules\OLTP\Paciente\PacientePage.cs" />
+    <Compile Include="Modules\OLTP\Paciente\PacienteColumns.cs" />
+    <Compile Include="Modules\OLTP\Paciente\PacienteForm.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

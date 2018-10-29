@@ -8042,3 +8042,27 @@ section.content > .s-DataGrid {
 .s-NoteDialog .ui-dialog-content {
   padding-bottom: 10px;
 }
+.s-OLTP-ExameDialog > .size {
+  width: 650px;
+}
+.s-OLTP-ExameDialog .caption {
+  width: 150px;
+}
+.s-OLTP-HistoricoDialog > .size {
+  width: 650px;
+}
+.s-OLTP-HistoricoDialog .caption {
+  width: 150px;
+}
+.s-OLTP-MedicoDialog > .size {
+  width: 650px;
+}
+.s-OLTP-MedicoDialog .caption {
+  width: 150px;
+}
+.s-OLTP-PacienteDialog > .size {
+  width: 650px;
+}
+.s-OLTP-PacienteDialog .caption {
+  width: 150px;
+}
