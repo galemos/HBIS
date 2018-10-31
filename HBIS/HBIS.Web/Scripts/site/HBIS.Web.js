@@ -337,6 +337,551 @@ var HBIS;
 })(HBIS || (HBIS = {}));
 var HBIS;
 (function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var ExameDescicaoForm = /** @class */ (function (_super) {
+            __extends(ExameDescicaoForm, _super);
+            function ExameDescicaoForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            ExameDescicaoForm.formKey = 'CRUD.ExameDescicao';
+            return ExameDescicaoForm;
+        }(Serenity.PrefixedContext));
+        CRUD.ExameDescicaoForm = ExameDescicaoForm;
+        [,
+            ['Descricao', function () { return Serenity.StringEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(ExameDescicaoForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var ExameDescicaoRow;
+        (function (ExameDescicaoRow) {
+            ExameDescicaoRow.idProperty = 'IdExameDescricao';
+            ExameDescicaoRow.nameProperty = 'Descricao';
+            ExameDescicaoRow.localTextPrefix = 'CRUD.ExameDescicao';
+            var Fields;
+            (function (Fields) {
+            })(Fields = ExameDescicaoRow.Fields || (ExameDescicaoRow.Fields = {}));
+            [
+                'IdExameDescricao',
+                'Descricao'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(ExameDescicaoRow = CRUD.ExameDescicaoRow || (CRUD.ExameDescicaoRow = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var ExameDescicaoService;
+        (function (ExameDescicaoService) {
+            ExameDescicaoService.baseUrl = 'CRUD/ExameDescicao';
+            var Methods;
+            (function (Methods) {
+            })(Methods = ExameDescicaoService.Methods || (ExameDescicaoService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                ExameDescicaoService[x] = function (r, s, o) {
+                    return Q.serviceRequest(ExameDescicaoService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = ExameDescicaoService.baseUrl + '/' + x;
+            });
+        })(ExameDescicaoService = CRUD.ExameDescicaoService || (CRUD.ExameDescicaoService = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var ExameForm = /** @class */ (function (_super) {
+            __extends(ExameForm, _super);
+            function ExameForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            ExameForm.formKey = 'CRUD.Exame';
+            return ExameForm;
+        }(Serenity.PrefixedContext));
+        CRUD.ExameForm = ExameForm;
+        [,
+            ['IdPaciente', function () { return Serenity.StringEditor; }],
+            ['IdExameDescicao', function () { return Serenity.StringEditor; }],
+            ['Crm', function () { return Serenity.StringEditor; }],
+            ['Resultado', function () { return Serenity.DecimalEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(ExameForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var ExameRow;
+        (function (ExameRow) {
+            ExameRow.idProperty = 'IdExame';
+            ExameRow.nameProperty = 'Crm';
+            ExameRow.localTextPrefix = 'CRUD.Exame';
+            var Fields;
+            (function (Fields) {
+            })(Fields = ExameRow.Fields || (ExameRow.Fields = {}));
+            [
+                'IdExame',
+                'IdPaciente',
+                'IdExameDescicao',
+                'Crm',
+                'Resultado',
+                'IdPacienteIdSexo',
+                'IdPacienteIdTipoSanguineo',
+                'IdPacienteAltura',
+                'IdPacienteContatoEmergencia',
+                'IdPacienteDataNascimento',
+                'IdPacienteEmail',
+                'IdPacienteFatorCorrecao',
+                'IdPacienteGlicemiaIdeal',
+                'IdPacienteInsulinaBasal',
+                'IdPacienteInsulinaRapida',
+                'IdPacienteNome',
+                'IdPacientePeso',
+                'IdExameDescicaoDescricao',
+                'CrmCpf',
+                'CrmNome',
+                'CrmEmail'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(ExameRow = CRUD.ExameRow || (CRUD.ExameRow = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var ExameService;
+        (function (ExameService) {
+            ExameService.baseUrl = 'CRUD/Exame';
+            var Methods;
+            (function (Methods) {
+            })(Methods = ExameService.Methods || (ExameService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                ExameService[x] = function (r, s, o) {
+                    return Q.serviceRequest(ExameService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = ExameService.baseUrl + '/' + x;
+            });
+        })(ExameService = CRUD.ExameService || (CRUD.ExameService = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var HistoricoForm = /** @class */ (function (_super) {
+            __extends(HistoricoForm, _super);
+            function HistoricoForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            HistoricoForm.formKey = 'CRUD.Historico';
+            return HistoricoForm;
+        }(Serenity.PrefixedContext));
+        CRUD.HistoricoForm = HistoricoForm;
+        [,
+            ['IdPaciente', function () { return Serenity.StringEditor; }],
+            ['Carboidrato', function () { return Serenity.DecimalEditor; }],
+            ['Data', function () { return Serenity.DateEditor; }],
+            ['GlicemiaAtual', function () { return Serenity.DecimalEditor; }],
+            ['Insulina', function () { return Serenity.DecimalEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(HistoricoForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var HistoricoRow;
+        (function (HistoricoRow) {
+            HistoricoRow.idProperty = 'IdHistorico';
+            HistoricoRow.localTextPrefix = 'CRUD.Historico';
+            var Fields;
+            (function (Fields) {
+            })(Fields = HistoricoRow.Fields || (HistoricoRow.Fields = {}));
+            [
+                'IdHistorico',
+                'IdPaciente',
+                'Carboidrato',
+                'Data',
+                'GlicemiaAtual',
+                'Insulina',
+                'IdPacienteIdSexo',
+                'IdPacienteIdTipoSanguineo',
+                'IdPacienteAltura',
+                'IdPacienteContatoEmergencia',
+                'IdPacienteDataNascimento',
+                'IdPacienteEmail',
+                'IdPacienteFatorCorrecao',
+                'IdPacienteGlicemiaIdeal',
+                'IdPacienteInsulinaBasal',
+                'IdPacienteInsulinaRapida',
+                'IdPacienteNome',
+                'IdPacientePeso'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(HistoricoRow = CRUD.HistoricoRow || (CRUD.HistoricoRow = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var HistoricoService;
+        (function (HistoricoService) {
+            HistoricoService.baseUrl = 'CRUD/Historico';
+            var Methods;
+            (function (Methods) {
+            })(Methods = HistoricoService.Methods || (HistoricoService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                HistoricoService[x] = function (r, s, o) {
+                    return Q.serviceRequest(HistoricoService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = HistoricoService.baseUrl + '/' + x;
+            });
+        })(HistoricoService = CRUD.HistoricoService || (CRUD.HistoricoService = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var MedicoForm = /** @class */ (function (_super) {
+            __extends(MedicoForm, _super);
+            function MedicoForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            MedicoForm.formKey = 'CRUD.Medico';
+            return MedicoForm;
+        }(Serenity.PrefixedContext));
+        CRUD.MedicoForm = MedicoForm;
+        [,
+            ['Cpf', function () { return Serenity.StringEditor; }],
+            ['Nome', function () { return Serenity.StringEditor; }],
+            ['Email', function () { return Serenity.StringEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(MedicoForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var MedicoRow;
+        (function (MedicoRow) {
+            MedicoRow.idProperty = 'Crm';
+            MedicoRow.nameProperty = 'Crm';
+            MedicoRow.localTextPrefix = 'CRUD.Medico';
+            var Fields;
+            (function (Fields) {
+            })(Fields = MedicoRow.Fields || (MedicoRow.Fields = {}));
+            [
+                'Crm',
+                'Cpf',
+                'Nome',
+                'Email'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(MedicoRow = CRUD.MedicoRow || (CRUD.MedicoRow = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var MedicoService;
+        (function (MedicoService) {
+            MedicoService.baseUrl = 'CRUD/Medico';
+            var Methods;
+            (function (Methods) {
+            })(Methods = MedicoService.Methods || (MedicoService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                MedicoService[x] = function (r, s, o) {
+                    return Q.serviceRequest(MedicoService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = MedicoService.baseUrl + '/' + x;
+            });
+        })(MedicoService = CRUD.MedicoService || (CRUD.MedicoService = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var PacienteForm = /** @class */ (function (_super) {
+            __extends(PacienteForm, _super);
+            function PacienteForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            PacienteForm.formKey = 'CRUD.Paciente';
+            return PacienteForm;
+        }(Serenity.PrefixedContext));
+        CRUD.PacienteForm = PacienteForm;
+        [,
+            ['IdSexo', function () { return Serenity.StringEditor; }],
+            ['IdTipoSanguineo', function () { return Serenity.StringEditor; }],
+            ['Altura', function () { return Serenity.DecimalEditor; }],
+            ['ContatoEmergencia', function () { return Serenity.StringEditor; }],
+            ['DataNascimento', function () { return Serenity.DateEditor; }],
+            ['Email', function () { return Serenity.StringEditor; }],
+            ['FatorCorrecao', function () { return Serenity.DecimalEditor; }],
+            ['GlicemiaIdeal', function () { return Serenity.DecimalEditor; }],
+            ['InsulinaBasal', function () { return Serenity.DecimalEditor; }],
+            ['InsulinaRapida', function () { return Serenity.DecimalEditor; }],
+            ['Nome', function () { return Serenity.StringEditor; }],
+            ['Peso', function () { return Serenity.DecimalEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(PacienteForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var PacienteRow;
+        (function (PacienteRow) {
+            PacienteRow.idProperty = 'IdPaciente';
+            PacienteRow.nameProperty = 'ContatoEmergencia';
+            PacienteRow.localTextPrefix = 'CRUD.Paciente';
+            var Fields;
+            (function (Fields) {
+            })(Fields = PacienteRow.Fields || (PacienteRow.Fields = {}));
+            [
+                'IdPaciente',
+                'IdSexo',
+                'IdTipoSanguineo',
+                'Altura',
+                'ContatoEmergencia',
+                'DataNascimento',
+                'Email',
+                'FatorCorrecao',
+                'GlicemiaIdeal',
+                'InsulinaBasal',
+                'InsulinaRapida',
+                'Nome',
+                'Peso',
+                'IdSexoDescricao',
+                'IdTipoSanguineoDescricao'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(PacienteRow = CRUD.PacienteRow || (CRUD.PacienteRow = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var PacienteService;
+        (function (PacienteService) {
+            PacienteService.baseUrl = 'CRUD/Paciente';
+            var Methods;
+            (function (Methods) {
+            })(Methods = PacienteService.Methods || (PacienteService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                PacienteService[x] = function (r, s, o) {
+                    return Q.serviceRequest(PacienteService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = PacienteService.baseUrl + '/' + x;
+            });
+        })(PacienteService = CRUD.PacienteService || (CRUD.PacienteService = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var SexoForm = /** @class */ (function (_super) {
+            __extends(SexoForm, _super);
+            function SexoForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            SexoForm.formKey = 'CRUD.Sexo';
+            return SexoForm;
+        }(Serenity.PrefixedContext));
+        CRUD.SexoForm = SexoForm;
+        [,
+            ['Descricao', function () { return Serenity.StringEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(SexoForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var SexoRow;
+        (function (SexoRow) {
+            SexoRow.idProperty = 'IdSexo';
+            SexoRow.nameProperty = 'Descricao';
+            SexoRow.localTextPrefix = 'CRUD.Sexo';
+            var Fields;
+            (function (Fields) {
+            })(Fields = SexoRow.Fields || (SexoRow.Fields = {}));
+            [
+                'IdSexo',
+                'Descricao'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(SexoRow = CRUD.SexoRow || (CRUD.SexoRow = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var SexoService;
+        (function (SexoService) {
+            SexoService.baseUrl = 'CRUD/Sexo';
+            var Methods;
+            (function (Methods) {
+            })(Methods = SexoService.Methods || (SexoService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                SexoService[x] = function (r, s, o) {
+                    return Q.serviceRequest(SexoService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = SexoService.baseUrl + '/' + x;
+            });
+        })(SexoService = CRUD.SexoService || (CRUD.SexoService = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var TipoSanguineoForm = /** @class */ (function (_super) {
+            __extends(TipoSanguineoForm, _super);
+            function TipoSanguineoForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            TipoSanguineoForm.formKey = 'CRUD.TipoSanguineo';
+            return TipoSanguineoForm;
+        }(Serenity.PrefixedContext));
+        CRUD.TipoSanguineoForm = TipoSanguineoForm;
+        [,
+            ['Descricao', function () { return Serenity.StringEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(TipoSanguineoForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var TipoSanguineoRow;
+        (function (TipoSanguineoRow) {
+            TipoSanguineoRow.idProperty = 'IdTipoSanguineo';
+            TipoSanguineoRow.nameProperty = 'Descricao';
+            TipoSanguineoRow.localTextPrefix = 'CRUD.TipoSanguineo';
+            var Fields;
+            (function (Fields) {
+            })(Fields = TipoSanguineoRow.Fields || (TipoSanguineoRow.Fields = {}));
+            [
+                'IdTipoSanguineo',
+                'Descricao'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(TipoSanguineoRow = CRUD.TipoSanguineoRow || (CRUD.TipoSanguineoRow = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var TipoSanguineoService;
+        (function (TipoSanguineoService) {
+            TipoSanguineoService.baseUrl = 'CRUD/TipoSanguineo';
+            var Methods;
+            (function (Methods) {
+            })(Methods = TipoSanguineoService.Methods || (TipoSanguineoService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                TipoSanguineoService[x] = function (r, s, o) {
+                    return Q.serviceRequest(TipoSanguineoService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = TipoSanguineoService.baseUrl + '/' + x;
+            });
+        })(TipoSanguineoService = CRUD.TipoSanguineoService || (CRUD.TipoSanguineoService = {}));
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
     var Membership;
     (function (Membership) {
         var ChangePasswordForm = /** @class */ (function (_super) {
@@ -465,6 +1010,74 @@ var HBIS;
         }(Serenity.PrefixedContext));
         Membership.SignUpForm = SignUpForm;
     })(Membership = HBIS.Membership || (HBIS.Membership = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var OLTP;
+    (function (OLTP) {
+        var ExameDescicaoForm = /** @class */ (function (_super) {
+            __extends(ExameDescicaoForm, _super);
+            function ExameDescicaoForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            ExameDescicaoForm.formKey = 'OLTP.ExameDescicao';
+            return ExameDescicaoForm;
+        }(Serenity.PrefixedContext));
+        OLTP.ExameDescicaoForm = ExameDescicaoForm;
+        [,
+            ['Descricao', function () { return Serenity.StringEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(ExameDescicaoForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var OLTP;
+    (function (OLTP) {
+        var ExameDescicaoRow;
+        (function (ExameDescicaoRow) {
+            ExameDescicaoRow.idProperty = 'IdExameDescricao';
+            ExameDescicaoRow.nameProperty = 'Descricao';
+            ExameDescicaoRow.localTextPrefix = 'OLTP.ExameDescicao';
+            var Fields;
+            (function (Fields) {
+            })(Fields = ExameDescicaoRow.Fields || (ExameDescicaoRow.Fields = {}));
+            [
+                'IdExameDescricao',
+                'Descricao'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(ExameDescicaoRow = OLTP.ExameDescicaoRow || (OLTP.ExameDescicaoRow = {}));
+    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var OLTP;
+    (function (OLTP) {
+        var ExameDescicaoService;
+        (function (ExameDescicaoService) {
+            ExameDescicaoService.baseUrl = 'OLTP/ExameDescicao';
+            var Methods;
+            (function (Methods) {
+            })(Methods = ExameDescicaoService.Methods || (ExameDescicaoService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                ExameDescicaoService[x] = function (r, s, o) {
+                    return Q.serviceRequest(ExameDescicaoService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = ExameDescicaoService.baseUrl + '/' + x;
+            });
+        })(ExameDescicaoService = OLTP.ExameDescicaoService || (OLTP.ExameDescicaoService = {}));
+    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
 })(HBIS || (HBIS = {}));
 var HBIS;
 (function (HBIS) {
@@ -716,6 +1329,142 @@ var HBIS;
                 };
             });
         })(PacienteService = OLTP.PacienteService || (OLTP.PacienteService = {}));
+    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var OLTP;
+    (function (OLTP) {
+        var SexoForm = /** @class */ (function (_super) {
+            __extends(SexoForm, _super);
+            function SexoForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            SexoForm.formKey = 'OLTP.Sexo';
+            return SexoForm;
+        }(Serenity.PrefixedContext));
+        OLTP.SexoForm = SexoForm;
+        [,
+            ['Descricao', function () { return Serenity.StringEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(SexoForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var OLTP;
+    (function (OLTP) {
+        var SexoRow;
+        (function (SexoRow) {
+            SexoRow.idProperty = 'IdSexo';
+            SexoRow.nameProperty = 'Descricao';
+            SexoRow.localTextPrefix = 'OLTP.Sexo';
+            var Fields;
+            (function (Fields) {
+            })(Fields = SexoRow.Fields || (SexoRow.Fields = {}));
+            [
+                'IdSexo',
+                'Descricao'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(SexoRow = OLTP.SexoRow || (OLTP.SexoRow = {}));
+    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var OLTP;
+    (function (OLTP) {
+        var SexoService;
+        (function (SexoService) {
+            SexoService.baseUrl = 'OLTP/Sexo';
+            var Methods;
+            (function (Methods) {
+            })(Methods = SexoService.Methods || (SexoService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                SexoService[x] = function (r, s, o) {
+                    return Q.serviceRequest(SexoService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = SexoService.baseUrl + '/' + x;
+            });
+        })(SexoService = OLTP.SexoService || (OLTP.SexoService = {}));
+    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var OLTP;
+    (function (OLTP) {
+        var TipoSanguineoForm = /** @class */ (function (_super) {
+            __extends(TipoSanguineoForm, _super);
+            function TipoSanguineoForm() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            TipoSanguineoForm.formKey = 'OLTP.TipoSanguineo';
+            return TipoSanguineoForm;
+        }(Serenity.PrefixedContext));
+        OLTP.TipoSanguineoForm = TipoSanguineoForm;
+        [,
+            ['Descricao', function () { return Serenity.StringEditor; }]
+        ].forEach(function (x) { return Object.defineProperty(TipoSanguineoForm.prototype, x[0], {
+            get: function () {
+                return this.w(x[0], x[1]());
+            },
+            enumerable: true,
+            configurable: true
+        }); });
+    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var OLTP;
+    (function (OLTP) {
+        var TipoSanguineoRow;
+        (function (TipoSanguineoRow) {
+            TipoSanguineoRow.idProperty = 'IdTipoSanguineo';
+            TipoSanguineoRow.nameProperty = 'Descricao';
+            TipoSanguineoRow.localTextPrefix = 'OLTP.TipoSanguineo';
+            var Fields;
+            (function (Fields) {
+            })(Fields = TipoSanguineoRow.Fields || (TipoSanguineoRow.Fields = {}));
+            [
+                'IdTipoSanguineo',
+                'Descricao'
+            ].forEach(function (x) { return Fields[x] = x; });
+        })(TipoSanguineoRow = OLTP.TipoSanguineoRow || (OLTP.TipoSanguineoRow = {}));
+    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var OLTP;
+    (function (OLTP) {
+        var TipoSanguineoService;
+        (function (TipoSanguineoService) {
+            TipoSanguineoService.baseUrl = 'OLTP/TipoSanguineo';
+            var Methods;
+            (function (Methods) {
+            })(Methods = TipoSanguineoService.Methods || (TipoSanguineoService.Methods = {}));
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                TipoSanguineoService[x] = function (r, s, o) {
+                    return Q.serviceRequest(TipoSanguineoService.baseUrl + '/' + x, r, s, o);
+                };
+                Methods[x] = TipoSanguineoService.baseUrl + '/' + x;
+            });
+        })(TipoSanguineoService = OLTP.TipoSanguineoService || (OLTP.TipoSanguineoService = {}));
     })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
 })(HBIS || (HBIS = {}));
 var HBIS;
@@ -2836,186 +3585,324 @@ var HBIS;
 })(HBIS || (HBIS = {}));
 var HBIS;
 (function (HBIS) {
-    var OLTP;
-    (function (OLTP) {
+    var CRUD;
+    (function (CRUD) {
         var ExameDialog = /** @class */ (function (_super) {
             __extends(ExameDialog, _super);
             function ExameDialog() {
                 var _this = _super !== null && _super.apply(this, arguments) || this;
-                _this.form = new OLTP.ExameForm(_this.idPrefix);
+                _this.form = new CRUD.ExameForm(_this.idPrefix);
                 return _this;
             }
-            ExameDialog.prototype.getFormKey = function () { return OLTP.ExameForm.formKey; };
-            ExameDialog.prototype.getIdProperty = function () { return OLTP.ExameRow.idProperty; };
-            ExameDialog.prototype.getLocalTextPrefix = function () { return OLTP.ExameRow.localTextPrefix; };
-            ExameDialog.prototype.getNameProperty = function () { return OLTP.ExameRow.nameProperty; };
-            ExameDialog.prototype.getService = function () { return OLTP.ExameService.baseUrl; };
+            ExameDialog.prototype.getFormKey = function () { return CRUD.ExameForm.formKey; };
+            ExameDialog.prototype.getIdProperty = function () { return CRUD.ExameRow.idProperty; };
+            ExameDialog.prototype.getLocalTextPrefix = function () { return CRUD.ExameRow.localTextPrefix; };
+            ExameDialog.prototype.getNameProperty = function () { return CRUD.ExameRow.nameProperty; };
+            ExameDialog.prototype.getService = function () { return CRUD.ExameService.baseUrl; };
             ExameDialog = __decorate([
                 Serenity.Decorators.registerClass()
             ], ExameDialog);
             return ExameDialog;
         }(Serenity.EntityDialog));
-        OLTP.ExameDialog = ExameDialog;
-    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+        CRUD.ExameDialog = ExameDialog;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
 })(HBIS || (HBIS = {}));
 var HBIS;
 (function (HBIS) {
-    var OLTP;
-    (function (OLTP) {
+    var CRUD;
+    (function (CRUD) {
         var ExameGrid = /** @class */ (function (_super) {
             __extends(ExameGrid, _super);
             function ExameGrid(container) {
                 return _super.call(this, container) || this;
             }
-            ExameGrid.prototype.getColumnsKey = function () { return 'OLTP.Exame'; };
-            ExameGrid.prototype.getDialogType = function () { return OLTP.ExameDialog; };
-            ExameGrid.prototype.getIdProperty = function () { return OLTP.ExameRow.idProperty; };
-            ExameGrid.prototype.getLocalTextPrefix = function () { return OLTP.ExameRow.localTextPrefix; };
-            ExameGrid.prototype.getService = function () { return OLTP.ExameService.baseUrl; };
+            ExameGrid.prototype.getColumnsKey = function () { return 'CRUD.Exame'; };
+            ExameGrid.prototype.getDialogType = function () { return CRUD.ExameDialog; };
+            ExameGrid.prototype.getIdProperty = function () { return CRUD.ExameRow.idProperty; };
+            ExameGrid.prototype.getLocalTextPrefix = function () { return CRUD.ExameRow.localTextPrefix; };
+            ExameGrid.prototype.getService = function () { return CRUD.ExameService.baseUrl; };
             ExameGrid = __decorate([
                 Serenity.Decorators.registerClass()
             ], ExameGrid);
             return ExameGrid;
         }(Serenity.EntityGrid));
-        OLTP.ExameGrid = ExameGrid;
-    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+        CRUD.ExameGrid = ExameGrid;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
 })(HBIS || (HBIS = {}));
 var HBIS;
 (function (HBIS) {
-    var OLTP;
-    (function (OLTP) {
+    var CRUD;
+    (function (CRUD) {
+        var ExameDescicaoDialog = /** @class */ (function (_super) {
+            __extends(ExameDescicaoDialog, _super);
+            function ExameDescicaoDialog() {
+                var _this = _super !== null && _super.apply(this, arguments) || this;
+                _this.form = new CRUD.ExameDescicaoForm(_this.idPrefix);
+                return _this;
+            }
+            ExameDescicaoDialog.prototype.getFormKey = function () { return CRUD.ExameDescicaoForm.formKey; };
+            ExameDescicaoDialog.prototype.getIdProperty = function () { return CRUD.ExameDescicaoRow.idProperty; };
+            ExameDescicaoDialog.prototype.getLocalTextPrefix = function () { return CRUD.ExameDescicaoRow.localTextPrefix; };
+            ExameDescicaoDialog.prototype.getNameProperty = function () { return CRUD.ExameDescicaoRow.nameProperty; };
+            ExameDescicaoDialog.prototype.getService = function () { return CRUD.ExameDescicaoService.baseUrl; };
+            ExameDescicaoDialog = __decorate([
+                Serenity.Decorators.registerClass()
+            ], ExameDescicaoDialog);
+            return ExameDescicaoDialog;
+        }(Serenity.EntityDialog));
+        CRUD.ExameDescicaoDialog = ExameDescicaoDialog;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var ExameDescicaoGrid = /** @class */ (function (_super) {
+            __extends(ExameDescicaoGrid, _super);
+            function ExameDescicaoGrid(container) {
+                return _super.call(this, container) || this;
+            }
+            ExameDescicaoGrid.prototype.getColumnsKey = function () { return 'CRUD.ExameDescicao'; };
+            ExameDescicaoGrid.prototype.getDialogType = function () { return CRUD.ExameDescicaoDialog; };
+            ExameDescicaoGrid.prototype.getIdProperty = function () { return CRUD.ExameDescicaoRow.idProperty; };
+            ExameDescicaoGrid.prototype.getLocalTextPrefix = function () { return CRUD.ExameDescicaoRow.localTextPrefix; };
+            ExameDescicaoGrid.prototype.getService = function () { return CRUD.ExameDescicaoService.baseUrl; };
+            ExameDescicaoGrid = __decorate([
+                Serenity.Decorators.registerClass()
+            ], ExameDescicaoGrid);
+            return ExameDescicaoGrid;
+        }(Serenity.EntityGrid));
+        CRUD.ExameDescicaoGrid = ExameDescicaoGrid;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
         var HistoricoDialog = /** @class */ (function (_super) {
             __extends(HistoricoDialog, _super);
             function HistoricoDialog() {
                 var _this = _super !== null && _super.apply(this, arguments) || this;
-                _this.form = new OLTP.HistoricoForm(_this.idPrefix);
+                _this.form = new CRUD.HistoricoForm(_this.idPrefix);
                 return _this;
             }
-            HistoricoDialog.prototype.getFormKey = function () { return OLTP.HistoricoForm.formKey; };
-            HistoricoDialog.prototype.getIdProperty = function () { return OLTP.HistoricoRow.idProperty; };
-            HistoricoDialog.prototype.getLocalTextPrefix = function () { return OLTP.HistoricoRow.localTextPrefix; };
-            HistoricoDialog.prototype.getService = function () { return OLTP.HistoricoService.baseUrl; };
+            HistoricoDialog.prototype.getFormKey = function () { return CRUD.HistoricoForm.formKey; };
+            HistoricoDialog.prototype.getIdProperty = function () { return CRUD.HistoricoRow.idProperty; };
+            HistoricoDialog.prototype.getLocalTextPrefix = function () { return CRUD.HistoricoRow.localTextPrefix; };
+            HistoricoDialog.prototype.getService = function () { return CRUD.HistoricoService.baseUrl; };
             HistoricoDialog = __decorate([
                 Serenity.Decorators.registerClass()
             ], HistoricoDialog);
             return HistoricoDialog;
         }(Serenity.EntityDialog));
-        OLTP.HistoricoDialog = HistoricoDialog;
-    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+        CRUD.HistoricoDialog = HistoricoDialog;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
 })(HBIS || (HBIS = {}));
 var HBIS;
 (function (HBIS) {
-    var OLTP;
-    (function (OLTP) {
+    var CRUD;
+    (function (CRUD) {
         var HistoricoGrid = /** @class */ (function (_super) {
             __extends(HistoricoGrid, _super);
             function HistoricoGrid(container) {
                 return _super.call(this, container) || this;
             }
-            HistoricoGrid.prototype.getColumnsKey = function () { return 'OLTP.Historico'; };
-            HistoricoGrid.prototype.getDialogType = function () { return OLTP.HistoricoDialog; };
-            HistoricoGrid.prototype.getIdProperty = function () { return OLTP.HistoricoRow.idProperty; };
-            HistoricoGrid.prototype.getLocalTextPrefix = function () { return OLTP.HistoricoRow.localTextPrefix; };
-            HistoricoGrid.prototype.getService = function () { return OLTP.HistoricoService.baseUrl; };
+            HistoricoGrid.prototype.getColumnsKey = function () { return 'CRUD.Historico'; };
+            HistoricoGrid.prototype.getDialogType = function () { return CRUD.HistoricoDialog; };
+            HistoricoGrid.prototype.getIdProperty = function () { return CRUD.HistoricoRow.idProperty; };
+            HistoricoGrid.prototype.getLocalTextPrefix = function () { return CRUD.HistoricoRow.localTextPrefix; };
+            HistoricoGrid.prototype.getService = function () { return CRUD.HistoricoService.baseUrl; };
             HistoricoGrid = __decorate([
                 Serenity.Decorators.registerClass()
             ], HistoricoGrid);
             return HistoricoGrid;
         }(Serenity.EntityGrid));
-        OLTP.HistoricoGrid = HistoricoGrid;
-    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+        CRUD.HistoricoGrid = HistoricoGrid;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
 })(HBIS || (HBIS = {}));
 var HBIS;
 (function (HBIS) {
-    var OLTP;
-    (function (OLTP) {
+    var CRUD;
+    (function (CRUD) {
         var MedicoDialog = /** @class */ (function (_super) {
             __extends(MedicoDialog, _super);
             function MedicoDialog() {
                 var _this = _super !== null && _super.apply(this, arguments) || this;
-                _this.form = new OLTP.MedicoForm(_this.idPrefix);
+                _this.form = new CRUD.MedicoForm(_this.idPrefix);
                 return _this;
             }
-            MedicoDialog.prototype.getFormKey = function () { return OLTP.MedicoForm.formKey; };
-            MedicoDialog.prototype.getIdProperty = function () { return OLTP.MedicoRow.idProperty; };
-            MedicoDialog.prototype.getLocalTextPrefix = function () { return OLTP.MedicoRow.localTextPrefix; };
-            MedicoDialog.prototype.getNameProperty = function () { return OLTP.MedicoRow.nameProperty; };
-            MedicoDialog.prototype.getService = function () { return OLTP.MedicoService.baseUrl; };
+            MedicoDialog.prototype.getFormKey = function () { return CRUD.MedicoForm.formKey; };
+            MedicoDialog.prototype.getIdProperty = function () { return CRUD.MedicoRow.idProperty; };
+            MedicoDialog.prototype.getLocalTextPrefix = function () { return CRUD.MedicoRow.localTextPrefix; };
+            MedicoDialog.prototype.getNameProperty = function () { return CRUD.MedicoRow.nameProperty; };
+            MedicoDialog.prototype.getService = function () { return CRUD.MedicoService.baseUrl; };
             MedicoDialog = __decorate([
                 Serenity.Decorators.registerClass()
             ], MedicoDialog);
             return MedicoDialog;
         }(Serenity.EntityDialog));
-        OLTP.MedicoDialog = MedicoDialog;
-    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+        CRUD.MedicoDialog = MedicoDialog;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
 })(HBIS || (HBIS = {}));
 var HBIS;
 (function (HBIS) {
-    var OLTP;
-    (function (OLTP) {
+    var CRUD;
+    (function (CRUD) {
         var MedicoGrid = /** @class */ (function (_super) {
             __extends(MedicoGrid, _super);
             function MedicoGrid(container) {
                 return _super.call(this, container) || this;
             }
-            MedicoGrid.prototype.getColumnsKey = function () { return 'OLTP.Medico'; };
-            MedicoGrid.prototype.getDialogType = function () { return OLTP.MedicoDialog; };
-            MedicoGrid.prototype.getIdProperty = function () { return OLTP.MedicoRow.idProperty; };
-            MedicoGrid.prototype.getLocalTextPrefix = function () { return OLTP.MedicoRow.localTextPrefix; };
-            MedicoGrid.prototype.getService = function () { return OLTP.MedicoService.baseUrl; };
+            MedicoGrid.prototype.getColumnsKey = function () { return 'CRUD.Medico'; };
+            MedicoGrid.prototype.getDialogType = function () { return CRUD.MedicoDialog; };
+            MedicoGrid.prototype.getIdProperty = function () { return CRUD.MedicoRow.idProperty; };
+            MedicoGrid.prototype.getLocalTextPrefix = function () { return CRUD.MedicoRow.localTextPrefix; };
+            MedicoGrid.prototype.getService = function () { return CRUD.MedicoService.baseUrl; };
             MedicoGrid = __decorate([
                 Serenity.Decorators.registerClass()
             ], MedicoGrid);
             return MedicoGrid;
         }(Serenity.EntityGrid));
-        OLTP.MedicoGrid = MedicoGrid;
-    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+        CRUD.MedicoGrid = MedicoGrid;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
 })(HBIS || (HBIS = {}));
 var HBIS;
 (function (HBIS) {
-    var OLTP;
-    (function (OLTP) {
+    var CRUD;
+    (function (CRUD) {
         var PacienteDialog = /** @class */ (function (_super) {
             __extends(PacienteDialog, _super);
             function PacienteDialog() {
                 var _this = _super !== null && _super.apply(this, arguments) || this;
-                _this.form = new OLTP.PacienteForm(_this.idPrefix);
+                _this.form = new CRUD.PacienteForm(_this.idPrefix);
                 return _this;
             }
-            PacienteDialog.prototype.getFormKey = function () { return OLTP.PacienteForm.formKey; };
-            PacienteDialog.prototype.getIdProperty = function () { return OLTP.PacienteRow.idProperty; };
-            PacienteDialog.prototype.getLocalTextPrefix = function () { return OLTP.PacienteRow.localTextPrefix; };
-            PacienteDialog.prototype.getNameProperty = function () { return OLTP.PacienteRow.nameProperty; };
-            PacienteDialog.prototype.getService = function () { return OLTP.PacienteService.baseUrl; };
+            PacienteDialog.prototype.getFormKey = function () { return CRUD.PacienteForm.formKey; };
+            PacienteDialog.prototype.getIdProperty = function () { return CRUD.PacienteRow.idProperty; };
+            PacienteDialog.prototype.getLocalTextPrefix = function () { return CRUD.PacienteRow.localTextPrefix; };
+            PacienteDialog.prototype.getNameProperty = function () { return CRUD.PacienteRow.nameProperty; };
+            PacienteDialog.prototype.getService = function () { return CRUD.PacienteService.baseUrl; };
             PacienteDialog = __decorate([
                 Serenity.Decorators.registerClass()
             ], PacienteDialog);
             return PacienteDialog;
         }(Serenity.EntityDialog));
-        OLTP.PacienteDialog = PacienteDialog;
-    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+        CRUD.PacienteDialog = PacienteDialog;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
 })(HBIS || (HBIS = {}));
 var HBIS;
 (function (HBIS) {
-    var OLTP;
-    (function (OLTP) {
+    var CRUD;
+    (function (CRUD) {
         var PacienteGrid = /** @class */ (function (_super) {
             __extends(PacienteGrid, _super);
             function PacienteGrid(container) {
                 return _super.call(this, container) || this;
             }
-            PacienteGrid.prototype.getColumnsKey = function () { return 'OLTP.Paciente'; };
-            PacienteGrid.prototype.getDialogType = function () { return OLTP.PacienteDialog; };
-            PacienteGrid.prototype.getIdProperty = function () { return OLTP.PacienteRow.idProperty; };
-            PacienteGrid.prototype.getLocalTextPrefix = function () { return OLTP.PacienteRow.localTextPrefix; };
-            PacienteGrid.prototype.getService = function () { return OLTP.PacienteService.baseUrl; };
+            PacienteGrid.prototype.getColumnsKey = function () { return 'CRUD.Paciente'; };
+            PacienteGrid.prototype.getDialogType = function () { return CRUD.PacienteDialog; };
+            PacienteGrid.prototype.getIdProperty = function () { return CRUD.PacienteRow.idProperty; };
+            PacienteGrid.prototype.getLocalTextPrefix = function () { return CRUD.PacienteRow.localTextPrefix; };
+            PacienteGrid.prototype.getService = function () { return CRUD.PacienteService.baseUrl; };
             PacienteGrid = __decorate([
                 Serenity.Decorators.registerClass()
             ], PacienteGrid);
             return PacienteGrid;
         }(Serenity.EntityGrid));
-        OLTP.PacienteGrid = PacienteGrid;
-    })(OLTP = HBIS.OLTP || (HBIS.OLTP = {}));
+        CRUD.PacienteGrid = PacienteGrid;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var SexoDialog = /** @class */ (function (_super) {
+            __extends(SexoDialog, _super);
+            function SexoDialog() {
+                var _this = _super !== null && _super.apply(this, arguments) || this;
+                _this.form = new CRUD.SexoForm(_this.idPrefix);
+                return _this;
+            }
+            SexoDialog.prototype.getFormKey = function () { return CRUD.SexoForm.formKey; };
+            SexoDialog.prototype.getIdProperty = function () { return CRUD.SexoRow.idProperty; };
+            SexoDialog.prototype.getLocalTextPrefix = function () { return CRUD.SexoRow.localTextPrefix; };
+            SexoDialog.prototype.getNameProperty = function () { return CRUD.SexoRow.nameProperty; };
+            SexoDialog.prototype.getService = function () { return CRUD.SexoService.baseUrl; };
+            SexoDialog = __decorate([
+                Serenity.Decorators.registerClass()
+            ], SexoDialog);
+            return SexoDialog;
+        }(Serenity.EntityDialog));
+        CRUD.SexoDialog = SexoDialog;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var SexoGrid = /** @class */ (function (_super) {
+            __extends(SexoGrid, _super);
+            function SexoGrid(container) {
+                return _super.call(this, container) || this;
+            }
+            SexoGrid.prototype.getColumnsKey = function () { return 'CRUD.Sexo'; };
+            SexoGrid.prototype.getDialogType = function () { return CRUD.SexoDialog; };
+            SexoGrid.prototype.getIdProperty = function () { return CRUD.SexoRow.idProperty; };
+            SexoGrid.prototype.getLocalTextPrefix = function () { return CRUD.SexoRow.localTextPrefix; };
+            SexoGrid.prototype.getService = function () { return CRUD.SexoService.baseUrl; };
+            SexoGrid = __decorate([
+                Serenity.Decorators.registerClass()
+            ], SexoGrid);
+            return SexoGrid;
+        }(Serenity.EntityGrid));
+        CRUD.SexoGrid = SexoGrid;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var TipoSanguineoDialog = /** @class */ (function (_super) {
+            __extends(TipoSanguineoDialog, _super);
+            function TipoSanguineoDialog() {
+                var _this = _super !== null && _super.apply(this, arguments) || this;
+                _this.form = new CRUD.TipoSanguineoForm(_this.idPrefix);
+                return _this;
+            }
+            TipoSanguineoDialog.prototype.getFormKey = function () { return CRUD.TipoSanguineoForm.formKey; };
+            TipoSanguineoDialog.prototype.getIdProperty = function () { return CRUD.TipoSanguineoRow.idProperty; };
+            TipoSanguineoDialog.prototype.getLocalTextPrefix = function () { return CRUD.TipoSanguineoRow.localTextPrefix; };
+            TipoSanguineoDialog.prototype.getNameProperty = function () { return CRUD.TipoSanguineoRow.nameProperty; };
+            TipoSanguineoDialog.prototype.getService = function () { return CRUD.TipoSanguineoService.baseUrl; };
+            TipoSanguineoDialog = __decorate([
+                Serenity.Decorators.registerClass()
+            ], TipoSanguineoDialog);
+            return TipoSanguineoDialog;
+        }(Serenity.EntityDialog));
+        CRUD.TipoSanguineoDialog = TipoSanguineoDialog;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
+})(HBIS || (HBIS = {}));
+var HBIS;
+(function (HBIS) {
+    var CRUD;
+    (function (CRUD) {
+        var TipoSanguineoGrid = /** @class */ (function (_super) {
+            __extends(TipoSanguineoGrid, _super);
+            function TipoSanguineoGrid(container) {
+                return _super.call(this, container) || this;
+            }
+            TipoSanguineoGrid.prototype.getColumnsKey = function () { return 'CRUD.TipoSanguineo'; };
+            TipoSanguineoGrid.prototype.getDialogType = function () { return CRUD.TipoSanguineoDialog; };
+            TipoSanguineoGrid.prototype.getIdProperty = function () { return CRUD.TipoSanguineoRow.idProperty; };
+            TipoSanguineoGrid.prototype.getLocalTextPrefix = function () { return CRUD.TipoSanguineoRow.localTextPrefix; };
+            TipoSanguineoGrid.prototype.getService = function () { return CRUD.TipoSanguineoService.baseUrl; };
+            TipoSanguineoGrid = __decorate([
+                Serenity.Decorators.registerClass()
+            ], TipoSanguineoGrid);
+            return TipoSanguineoGrid;
+        }(Serenity.EntityGrid));
+        CRUD.TipoSanguineoGrid = TipoSanguineoGrid;
+    })(CRUD = HBIS.CRUD || (HBIS.CRUD = {}));
 })(HBIS || (HBIS = {}));
 var HBIS;
 (function (HBIS) {

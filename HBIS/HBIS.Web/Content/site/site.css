@@ -7428,3 +7428,63 @@ section.content > .s-DataGrid {
 .s-OLTP-PacienteDialog .caption {
   width: 150px;
 }
+.s-OLTP-ExameDescicaoDialog > .size {
+  width: 650px;
+}
+.s-OLTP-ExameDescicaoDialog .caption {
+  width: 150px;
+}
+.s-OLTP-SexoDialog > .size {
+  width: 650px;
+}
+.s-OLTP-SexoDialog .caption {
+  width: 150px;
+}
+.s-OLTP-TipoSanguineoDialog > .size {
+  width: 650px;
+}
+.s-OLTP-TipoSanguineoDialog .caption {
+  width: 150px;
+}
+.s-CRUD-ExameDialog > .size {
+  width: 650px;
+}
+.s-CRUD-ExameDialog .caption {
+  width: 150px;
+}
+.s-CRUD-ExameDescicaoDialog > .size {
+  width: 650px;
+}
+.s-CRUD-ExameDescicaoDialog .caption {
+  width: 150px;
+}
+.s-CRUD-HistoricoDialog > .size {
+  width: 650px;
+}
+.s-CRUD-HistoricoDialog .caption {
+  width: 150px;
+}
+.s-CRUD-MedicoDialog > .size {
+  width: 650px;
+}
+.s-CRUD-MedicoDialog .caption {
+  width: 150px;
+}
+.s-CRUD-PacienteDialog > .size {
+  width: 650px;
+}
+.s-CRUD-PacienteDialog .caption {
+  width: 150px;
+}
+.s-CRUD-SexoDialog > .size {
+  width: 650px;
+}
+.s-CRUD-SexoDialog .caption {
+  width: 150px;
+}
+.s-CRUD-TipoSanguineoDialog > .size {
+  width: 650px;
+}
+.s-CRUD-TipoSanguineoDialog .caption {
+  width: 150px;
+}
