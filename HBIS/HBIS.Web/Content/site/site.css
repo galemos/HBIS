@@ -7488,3 +7488,87 @@ section.content > .s-DataGrid {
 .s-CRUD-TipoSanguineoDialog .caption {
   width: 150px;
 }
+.s-OLAP-ExameDialog > .size {
+  width: 650px;
+}
+.s-OLAP-ExameDialog .caption {
+  width: 150px;
+}
+.s-OLAP-ExameDescicaoDialog > .size {
+  width: 650px;
+}
+.s-OLAP-ExameDescicaoDialog .caption {
+  width: 150px;
+}
+.s-OLAP-HistoricoDialog > .size {
+  width: 650px;
+}
+.s-OLAP-HistoricoDialog .caption {
+  width: 150px;
+}
+.s-OLAP-MedicoDialog > .size {
+  width: 650px;
+}
+.s-OLAP-MedicoDialog .caption {
+  width: 150px;
+}
+.s-OLAP-PacienteDialog > .size {
+  width: 650px;
+}
+.s-OLAP-PacienteDialog .caption {
+  width: 150px;
+}
+.s-OLAP-SexoDialog > .size {
+  width: 650px;
+}
+.s-OLAP-SexoDialog .caption {
+  width: 150px;
+}
+.s-OLAP-TipoSanguineoDialog > .size {
+  width: 650px;
+}
+.s-OLAP-TipoSanguineoDialog .caption {
+  width: 150px;
+}
+.s-ADD-ExameDialog > .size {
+  width: 650px;
+}
+.s-ADD-ExameDialog .caption {
+  width: 150px;
+}
+.s-ADD-ExameDescicaoDialog > .size {
+  width: 650px;
+}
+.s-ADD-ExameDescicaoDialog .caption {
+  width: 150px;
+}
+.s-ADD-HistoricoDialog > .size {
+  width: 650px;
+}
+.s-ADD-HistoricoDialog .caption {
+  width: 150px;
+}
+.s-ADD-MedicoDialog > .size {
+  width: 650px;
+}
+.s-ADD-MedicoDialog .caption {
+  width: 150px;
+}
+.s-ADD-PacienteDialog > .size {
+  width: 650px;
+}
+.s-ADD-PacienteDialog .caption {
+  width: 150px;
+}
+.s-ADD-SexoDialog > .size {
+  width: 650px;
+}
+.s-ADD-SexoDialog .caption {
+  width: 150px;
+}
+.s-ADD-TipoSanguineoDialog > .size {
+  width: 650px;
+}
+.s-ADD-TipoSanguineoDialog .caption {
+  width: 150px;
+}

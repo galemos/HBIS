@@ -1641,49 +1641,177 @@
     <TypeScriptCompile Include="Imports\ServerTypings\OLTP.TipoSanguineoForm.ts">
       <DependentUpon>ServerTypings.tt</DependentUpon>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.ExameRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.ExameService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <Content Include="Modules\CRUD\Exame\ExameIndex.cshtml" />
-    <TypeScriptCompile Include="Modules\CRUD\Exame\ExameDialog.ts" />
-    <TypeScriptCompile Include="Modules\CRUD\Exame\ExameGrid.ts" />
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.ExameForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.ExameRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.ExameService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.ExameForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
     <Content Include="Content\site\site.crud.less" />
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.ExameDescicaoRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.ExameDescicaoService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <Content Include="Modules\CRUD\ExameDescicao\ExameDescicaoIndex.cshtml" />
-    <TypeScriptCompile Include="Modules\CRUD\ExameDescicao\ExameDescicaoDialog.ts" />
-    <TypeScriptCompile Include="Modules\CRUD\ExameDescicao\ExameDescicaoGrid.ts" />
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.ExameDescicaoForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.HistoricoRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.HistoricoService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <Content Include="Modules\CRUD\Historico\HistoricoIndex.cshtml" />
-    <TypeScriptCompile Include="Modules\CRUD\Historico\HistoricoDialog.ts" />
-    <TypeScriptCompile Include="Modules\CRUD\Historico\HistoricoGrid.ts" />
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.HistoricoForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.MedicoRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.MedicoService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <Content Include="Modules\CRUD\Medico\MedicoIndex.cshtml" />
-    <TypeScriptCompile Include="Modules\CRUD\Medico\MedicoDialog.ts" />
-    <TypeScriptCompile Include="Modules\CRUD\Medico\MedicoGrid.ts" />
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.MedicoForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.PacienteRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.PacienteService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <Content Include="Modules\CRUD\Paciente\PacienteIndex.cshtml" />
-    <TypeScriptCompile Include="Modules\CRUD\Paciente\PacienteDialog.ts" />
-    <TypeScriptCompile Include="Modules\CRUD\Paciente\PacienteGrid.ts" />
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.PacienteForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.SexoRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.SexoService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <Content Include="Modules\CRUD\Sexo\SexoIndex.cshtml" />
-    <TypeScriptCompile Include="Modules\CRUD\Sexo\SexoDialog.ts" />
-    <TypeScriptCompile Include="Modules\CRUD\Sexo\SexoGrid.ts" />
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.SexoForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.TipoSanguineoRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.TipoSanguineoService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <Content Include="Modules\CRUD\TipoSanguineo\TipoSanguineoIndex.cshtml" />
-    <TypeScriptCompile Include="Modules\CRUD\TipoSanguineo\TipoSanguineoDialog.ts" />
-    <TypeScriptCompile Include="Modules\CRUD\TipoSanguineo\TipoSanguineoGrid.ts" />
-    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.TipoSanguineoForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.ExameDescicaoRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.ExameDescicaoService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.ExameDescicaoForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.HistoricoRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.HistoricoService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.HistoricoForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.MedicoRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.MedicoService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.MedicoForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.PacienteRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.PacienteService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.PacienteForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.SexoRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.SexoService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.SexoForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.TipoSanguineoRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.TipoSanguineoService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\CRUD.TipoSanguineoForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.ExameRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.ExameService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.ExameForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Content\site\site.olap.less" />
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.ExameDescicaoRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.ExameDescicaoService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.ExameDescicaoForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.HistoricoRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.HistoricoService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.HistoricoForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.MedicoRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.MedicoService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.MedicoForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.PacienteRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.PacienteService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.PacienteForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.SexoRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.SexoService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.SexoForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.TipoSanguineoRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.TipoSanguineoService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\OLAP.TipoSanguineoForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.ExameRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.ExameService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Modules\ADD\Exame\ExameIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\ADD\Exame\ExameDialog.ts" />
+    <TypeScriptCompile Include="Modules\ADD\Exame\ExameGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.ExameForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Content\site\site.add.less" />
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.ExameDescicaoRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.ExameDescicaoService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Modules\ADD\ExameDescicao\ExameDescicaoIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\ADD\ExameDescicao\ExameDescicaoDialog.ts" />
+    <TypeScriptCompile Include="Modules\ADD\ExameDescicao\ExameDescicaoGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.ExameDescicaoForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.HistoricoRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.HistoricoService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Modules\ADD\Historico\HistoricoIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\ADD\Historico\HistoricoDialog.ts" />
+    <TypeScriptCompile Include="Modules\ADD\Historico\HistoricoGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.HistoricoForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.MedicoRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.MedicoService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Modules\ADD\Medico\MedicoIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\ADD\Medico\MedicoDialog.ts" />
+    <TypeScriptCompile Include="Modules\ADD\Medico\MedicoGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.MedicoForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.PacienteRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.PacienteService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Modules\ADD\Paciente\PacienteIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\ADD\Paciente\PacienteDialog.ts" />
+    <TypeScriptCompile Include="Modules\ADD\Paciente\PacienteGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.PacienteForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.SexoRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.SexoService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Modules\ADD\Sexo\SexoIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\ADD\Sexo\SexoDialog.ts" />
+    <TypeScriptCompile Include="Modules\ADD\Sexo\SexoGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.SexoForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.TipoSanguineoRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.TipoSanguineoService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <Content Include="Modules\ADD\TipoSanguineo\TipoSanguineoIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\ADD\TipoSanguineo\TipoSanguineoDialog.ts" />
+    <TypeScriptCompile Include="Modules\ADD\TipoSanguineo\TipoSanguineoGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\ADD.TipoSanguineoForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -1817,49 +1945,49 @@
     <Compile Include="Modules\Administration\UserPermission\UserPermissionRow.cs" />
     <Compile Include="Modules\Administration\UserPermission\UserPermissionRepository.cs" />
     <Compile Include="Modules\Administration\UserPermission\UserPermissionEndpoint.cs" />
-    <Compile Include="Modules\CRUD\Exame\ExameRow.cs" />
-    <Compile Include="Modules\CRUD\Exame\ExameRepository.cs" />
-    <Compile Include="Modules\CRUD\Exame\ExameEndpoint.cs" />
-    <Compile Include="Modules\CRUD\Exame\ExamePage.cs" />
-    <Compile Include="Modules\CRUD\Exame\ExameColumns.cs" />
-    <Compile Include="Modules\CRUD\Exame\ExameForm.cs" />
-    <Compile Include="Modules\CRUD\CRUDNavigation.cs" />
-    <Compile Include="Modules\CRUD\ExameDescicao\ExameDescicaoRow.cs" />
-    <Compile Include="Modules\CRUD\ExameDescicao\ExameDescicaoRepository.cs" />
-    <Compile Include="Modules\CRUD\ExameDescicao\ExameDescicaoEndpoint.cs" />
-    <Compile Include="Modules\CRUD\ExameDescicao\ExameDescicaoPage.cs" />
-    <Compile Include="Modules\CRUD\ExameDescicao\ExameDescicaoColumns.cs" />
-    <Compile Include="Modules\CRUD\ExameDescicao\ExameDescicaoForm.cs" />
-    <Compile Include="Modules\CRUD\Historico\HistoricoRow.cs" />
-    <Compile Include="Modules\CRUD\Historico\HistoricoRepository.cs" />
-    <Compile Include="Modules\CRUD\Historico\HistoricoEndpoint.cs" />
-    <Compile Include="Modules\CRUD\Historico\HistoricoPage.cs" />
-    <Compile Include="Modules\CRUD\Historico\HistoricoColumns.cs" />
-    <Compile Include="Modules\CRUD\Historico\HistoricoForm.cs" />
-    <Compile Include="Modules\CRUD\Medico\MedicoRow.cs" />
-    <Compile Include="Modules\CRUD\Medico\MedicoRepository.cs" />
-    <Compile Include="Modules\CRUD\Medico\MedicoEndpoint.cs" />
-    <Compile Include="Modules\CRUD\Medico\MedicoPage.cs" />
-    <Compile Include="Modules\CRUD\Medico\MedicoColumns.cs" />
-    <Compile Include="Modules\CRUD\Medico\MedicoForm.cs" />
-    <Compile Include="Modules\CRUD\Paciente\PacienteRow.cs" />
-    <Compile Include="Modules\CRUD\Paciente\PacienteRepository.cs" />
-    <Compile Include="Modules\CRUD\Paciente\PacienteEndpoint.cs" />
-    <Compile Include="Modules\CRUD\Paciente\PacientePage.cs" />
-    <Compile Include="Modules\CRUD\Paciente\PacienteColumns.cs" />
-    <Compile Include="Modules\CRUD\Paciente\PacienteForm.cs" />
-    <Compile Include="Modules\CRUD\Sexo\SexoRow.cs" />
-    <Compile Include="Modules\CRUD\Sexo\SexoRepository.cs" />
-    <Compile Include="Modules\CRUD\Sexo\SexoEndpoint.cs" />
-    <Compile Include="Modules\CRUD\Sexo\SexoPage.cs" />
-    <Compile Include="Modules\CRUD\Sexo\SexoColumns.cs" />
-    <Compile Include="Modules\CRUD\Sexo\SexoForm.cs" />
-    <Compile Include="Modules\CRUD\TipoSanguineo\TipoSanguineoRow.cs" />
-    <Compile Include="Modules\CRUD\TipoSanguineo\TipoSanguineoRepository.cs" />
-    <Compile Include="Modules\CRUD\TipoSanguineo\TipoSanguineoEndpoint.cs" />
-    <Compile Include="Modules\CRUD\TipoSanguineo\TipoSanguineoPage.cs" />
-    <Compile Include="Modules\CRUD\TipoSanguineo\TipoSanguineoColumns.cs" />
-    <Compile Include="Modules\CRUD\TipoSanguineo\TipoSanguineoForm.cs" />
+    <Compile Include="Modules\ADD\Exame\ExameRow.cs" />
+    <Compile Include="Modules\ADD\Exame\ExameRepository.cs" />
+    <Compile Include="Modules\ADD\Exame\ExameEndpoint.cs" />
+    <Compile Include="Modules\ADD\Exame\ExamePage.cs" />
+    <Compile Include="Modules\ADD\Exame\ExameColumns.cs" />
+    <Compile Include="Modules\ADD\Exame\ExameForm.cs" />
+    <Compile Include="Modules\ADD\ADDNavigation.cs" />
+    <Compile Include="Modules\ADD\ExameDescicao\ExameDescicaoRow.cs" />
+    <Compile Include="Modules\ADD\ExameDescicao\ExameDescicaoRepository.cs" />
+    <Compile Include="Modules\ADD\ExameDescicao\ExameDescicaoEndpoint.cs" />
+    <Compile Include="Modules\ADD\ExameDescicao\ExameDescicaoPage.cs" />
+    <Compile Include="Modules\ADD\ExameDescicao\ExameDescicaoColumns.cs" />
+    <Compile Include="Modules\ADD\ExameDescicao\ExameDescicaoForm.cs" />
+    <Compile Include="Modules\ADD\Historico\HistoricoRow.cs" />
+    <Compile Include="Modules\ADD\Historico\HistoricoRepository.cs" />
+    <Compile Include="Modules\ADD\Historico\HistoricoEndpoint.cs" />
+    <Compile Include="Modules\ADD\Historico\HistoricoPage.cs" />
+    <Compile Include="Modules\ADD\Historico\HistoricoColumns.cs" />
+    <Compile Include="Modules\ADD\Historico\HistoricoForm.cs" />
+    <Compile Include="Modules\ADD\Medico\MedicoRow.cs" />
+    <Compile Include="Modules\ADD\Medico\MedicoRepository.cs" />
+    <Compile Include="Modules\ADD\Medico\MedicoEndpoint.cs" />
+    <Compile Include="Modules\ADD\Medico\MedicoPage.cs" />
+    <Compile Include="Modules\ADD\Medico\MedicoColumns.cs" />
+    <Compile Include="Modules\ADD\Medico\MedicoForm.cs" />
+    <Compile Include="Modules\ADD\Paciente\PacienteRow.cs" />
+    <Compile Include="Modules\ADD\Paciente\PacienteRepository.cs" />
+    <Compile Include="Modules\ADD\Paciente\PacienteEndpoint.cs" />
+    <Compile Include="Modules\ADD\Paciente\PacientePage.cs" />
+    <Compile Include="Modules\ADD\Paciente\PacienteColumns.cs" />
+    <Compile Include="Modules\ADD\Paciente\PacienteForm.cs" />
+    <Compile Include="Modules\ADD\Sexo\SexoRow.cs" />
+    <Compile Include="Modules\ADD\Sexo\SexoRepository.cs" />
+    <Compile Include="Modules\ADD\Sexo\SexoEndpoint.cs" />
+    <Compile Include="Modules\ADD\Sexo\SexoPage.cs" />
+    <Compile Include="Modules\ADD\Sexo\SexoColumns.cs" />
+    <Compile Include="Modules\ADD\Sexo\SexoForm.cs" />
+    <Compile Include="Modules\ADD\TipoSanguineo\TipoSanguineoRow.cs" />
+    <Compile Include="Modules\ADD\TipoSanguineo\TipoSanguineoRepository.cs" />
+    <Compile Include="Modules\ADD\TipoSanguineo\TipoSanguineoEndpoint.cs" />
+    <Compile Include="Modules\ADD\TipoSanguineo\TipoSanguineoPage.cs" />
+    <Compile Include="Modules\ADD\TipoSanguineo\TipoSanguineoColumns.cs" />
+    <Compile Include="Modules\ADD\TipoSanguineo\TipoSanguineoForm.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
