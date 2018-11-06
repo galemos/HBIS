@@ -9,164 +9,38 @@
 @Html.ScriptBundle("Pages/Dashboard")
 }
 
-@section ContentHeader {
-    <h1>Dashboard TESTE</h1>
-}
+@section ContentHeader {}
 
-<!-- Small boxes (Stat box) -->
-<div class="row">
-    <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-aqua">
-            <div class="inner">
-                <h3>@Model.OpenOrders</h3>
-                <p>Quantidade de Pacientes</p>
-            </div>
-            <div class="icon">
-                <i class="ion ion-bag"></i>
-            </div>
-        </div>
-    </div><!-- ./col -->
-    <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-green">
-            <div class="inner">
-                <h3>@Model.ClosedOrderPercent<sup style="font-size: 20px">%</sup></h3>
-                <p>Acima do Valor Ideal</p>
-            </div>
-            <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-            </div>
-        </div>
-    </div><!-- ./col -->
-    <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-yellow">
-            <div class="inner">
-                <h3>@Model.CustomerCount</h3>
-                <p>Exames Realizados</p>
-            </div>
-            <div class="icon">
-                <i class="ion ion-person-add"></i>
-            </div>
-        </div>
-    </div><!-- ./col -->
-    <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-red">
-            <div class="inner">
-                <h3>@Model.ProductCount</h3>
-                <p>Dias Acimada média</p>
-            </div>
-            <div class="icon">
-                <i class="ion ion-pie-graph"></i>
-            </div>
-        </div>
-    </div><!-- ./col -->
-</div><!-- /.row -->
-<!-- Main row -->
-<div class="row">
-    <!-- Left col -->
-    <section class="col-lg-7 connectedSortable">
-        <!-- Custom tabs (Charts with tabs)-->
-        <div class="nav-tabs-custom">
-            <!-- Tabs within a box -->
-            <ul class="nav nav-tabs pull-right">
-                <li class="active"><a href="#revenue-chart" data-toggle="tab">Area</a></li>
+    <div class="container">
+        <h2>Dashboards</h2>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Glicemia e Insulina</a></li>
+            <li><a data-toggle="tab" href="#menu1">Insulina Curva Glicemica</a></li>
+            <li><a data-toggle="tab" href="#menu2">Mínimo, Máximo e Média</a></li>
+            <li><a data-toggle="tab" href="#menu3">Resultados Exames</a></li>
+            <li><a data-toggle="tab" href="#menu4">Exames Geral</a></li>
+        </ul>
 
-                <li class="pull-left header"><i class="fa fa-inbox"></i> Evolução Tratamento</li>
-            </ul>
-            <div class="tab-content no-padding">
-                <!-- Morris chart - Sales -->
-                <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 300px;"></div>
-                <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;"></div>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>Aferição de Glicemia e Insulina</h3>
+                <iframe width="1000" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMTNkN2RlNDAtYjdmZC00MmM4LThlMGYtNWM3MTllZWMyMTc4IiwidCI6ImNlODM0OTUwLTY0N2ItNGQ4MS1iNjExLWQwN2I5MTI1ODgxMSJ9" frameborder="0" allowFullScreen="true"></iframe>
             </div>
-        </div><!-- /.nav-tabs-custom -->
-        <!-- Chat box -->
-        <!-- TO DO List -->
-        <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMDA5OWUwMjUtZDMwNS00ZGMyLTgwMzEtMGM1MmYxNmM0MDc2IiwidCI6ImNlODM0OTUwLTY0N2ItNGQ4MS1iNjExLWQwN2I5MTI1ODgxMSJ9" frameborder="0" allowFullScreen="true"></iframe>
-        <!-- /.box -->
-        <!-- quick email widget -->
-
-    </section><!-- /.Left col -->
-    <!-- right col (We are only adding the ID to make the widgets sortable)-->
-    <section class="col-lg-5 connectedSortable">
-        <!-- Map box -->
-        <div class="box box-solid bg-light-blue-gradient">
-            
+            <div id="menu1" class="tab-pane fade">
+                <h3>Insulina Ministrada e Curva Glicemica</h3>
+                <iframe width="1000" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZGU1MTA2N2EtYjI5MC00MmI0LTkyOWMtMThkYTI1NGFkZDkzIiwidCI6ImNlODM0OTUwLTY0N2ItNGQ4MS1iNjExLWQwN2I5MTI1ODgxMSJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Comparativos Mínimo, Máximo e Média</h3>
+                <iframe width="1000" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYWM1MTE4ZjQtODdiMC00N2IzLWJiYTMtODhkZjQwNGVhZTJmIiwidCI6ImNlODM0OTUwLTY0N2ItNGQ4MS1iNjExLWQwN2I5MTI1ODgxMSJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <h3>Resultados Exames</h3>
+                <iframe width="1000" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZjBmZjUxMjUtODc3NS00MjI1LTk5YjMtMmE3ZDhlNDgxMGUwIiwidCI6ImNlODM0OTUwLTY0N2ItNGQ4MS1iNjExLWQwN2I5MTI1ODgxMSJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+            <div id="menu4" class="tab-pane fade">
+                <h3>Resultados Geral Exames</h3>
+                <iframe width="1000" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMTViOTU4YmItNjk1ZS00YTg1LTg3ZGQtMmFhMTE0N2Q5MjJhIiwidCI6ImNlODM0OTUwLTY0N2ItNGQ4MS1iNjExLWQwN2I5MTI1ODgxMSJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
         </div>
-        <!-- /.box -->
-        <!-- solid sales graph -->
-        <div class="box box-solid bg-teal-gradient">
-            <div class="box-header">
-                <i class="fa fa-th"></i>
-                <h3 class="box-title">Curva Glicemica</h3>
-            </div>
-            <div class="box-body border-radius-none">
-                <div class="chart" id="line-chart" style="height: 250px;"></div>
-            </div><!-- /.box-body -->
-            <div class="box-footer no-border">
-                <div class="row">
-                    <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-                        <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60" data-fgColor="#39CCCC">
-                        <div class="knob-label">Abaixo do ideal</div>
-                    </div><!-- ./col -->
-                    <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-                        <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60" data-fgColor="#39CCCC">
-                        <div class="knob-label">Dentro da ideal</div>
-                    </div><!-- ./col -->
-                    <div class="col-xs-4 text-center">
-                        <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60" data-fgColor="#39CCCC">
-                        <div class="knob-label">Acima do ideal</div>
-                    </div><!-- ./col -->
-                </div><!-- /.row -->
-            </div><!-- /.box-footer -->
-        </div><!-- /.box -->
-        <!-- Calendar -->
-        <div class="box box-solid bg-green-gradient">
-            <div class="box-header">
-                
-            </div><!-- /.box-header -->
-            <div class="box-body no-padding">
-                
-            </div><!-- /.box-body -->
-            <div class="box-footer text-black">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <!-- Progress bars -->
-                        <div class="clearfix">
-                            <span class="pull-left">MEDIDA #1</span>
-                            <small class="pull-right">90%</small>
-                        </div>
-                        <div class="progress xs">
-                            <div class="progress-bar progress-bar-green" style="width: 90%;"></div>
-                        </div>
-                        <div class="clearfix">
-                            <span class="pull-left">MEDIDA #2</span>
-                            <small class="pull-right">70%</small>
-                        </div>
-                        <div class="progress xs">
-                            <div class="progress-bar progress-bar-green" style="width: 70%;"></div>
-                        </div>
-                    </div><!-- /.col -->
-                    <div class="col-sm-6">
-                        <div class="clearfix">
-                            <span class="pull-left">MEDIDA #3</span>
-                            <small class="pull-right">60%</small>
-                        </div>
-                        <div class="progress xs">
-                            <div class="progress-bar progress-bar-green" style="width: 60%;"></div>
-                        </div>
-                        <div class="clearfix">
-                            <span class="pull-left">MEDIDA #4</span>
-                            <small class="pull-right">40%</small>
-                        </div>
-                        <div class="progress xs">
-                            <div class="progress-bar progress-bar-green" style="width: 40%;"></div>
-                        </div>
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
-            </div>
-        </div><!-- /.box -->
-    </section><!-- right col -->
-</div><!-- /.row (main row) -->
+    </div>

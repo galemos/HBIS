@@ -7572,3 +7572,21 @@ section.content > .s-DataGrid {
 .s-ADD-TipoSanguineoDialog .caption {
   width: 150px;
 }
+.s-Exame-ExameDialog > .size {
+  width: 650px;
+}
+.s-Exame-ExameDialog .caption {
+  width: 150px;
+}
+.s-Historico-HistoricoDialog > .size {
+  width: 650px;
+}
+.s-Historico-HistoricoDialog .caption {
+  width: 150px;
+}
+.s-Paciente-PacienteDialog > .size {
+  width: 650px;
+}
+.s-Paciente-PacienteDialog .caption {
+  width: 150px;
+}

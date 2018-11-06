@@ -47,6 +47,24 @@ namespace MVC
             public const string ValidationError = "~/Views/Errors/ValidationError.cshtml";
         }
 
+        public static class Exame
+        {
+            public static class Exame_
+            {
+                public const string ExameIndex = "~/Modules/Exame/Exame/ExameIndex.cshtml";
+            }
+
+        }
+
+        public static class Historico
+        {
+            public static class Historico_
+            {
+                public const string HistoricoIndex = "~/Modules/Historico/Historico/HistoricoIndex.cshtml";
+            }
+
+        }
+
         public static class Membership
         {
             public static class Account
@@ -81,26 +99,11 @@ namespace MVC
 
         }
 
-        public static class OLTP
+        public static class Paciente
         {
-            public static class Exame
+            public static class Paciente_
             {
-                public const string ExameIndex = "~/Modules/OLTP/Exame/ExameIndex.cshtml";
-            }
-
-            public static class Historico
-            {
-                public const string HistoricoIndex = "~/Modules/OLTP/Historico/HistoricoIndex.cshtml";
-            }
-
-            public static class Medico
-            {
-                public const string MedicoIndex = "~/Modules/OLTP/Medico/MedicoIndex.cshtml";
-            }
-
-            public static class Paciente
-            {
-                public const string PacienteIndex = "~/Modules/OLTP/Paciente/PacienteIndex.cshtml";
+                public const string PacienteIndex = "~/Modules/Paciente/Paciente/PacienteIndex.cshtml";
             }
         }
 

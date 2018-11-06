@@ -1,404 +1,5 @@
 ﻿/// <reference types="jquery" />
 /// <reference types="jqueryui" />
-declare namespace HBIS.ADD {
-    class ExameDescicaoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface ExameDescicaoForm {
-        Descricao: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.ADD {
-    interface ExameDescicaoRow {
-        IdExameDescricao?: number;
-        Descricao?: string;
-    }
-    namespace ExameDescicaoRow {
-        const idProperty = "IdExameDescricao";
-        const nameProperty = "Descricao";
-        const localTextPrefix = "ADD.ExameDescicao";
-        namespace Fields {
-            const IdExameDescricao: any;
-            const Descricao: any;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    namespace ExameDescicaoService {
-        const baseUrl = "ADD/ExameDescicao";
-        function Create(request: Serenity.SaveRequest<ExameDescicaoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<ExameDescicaoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<ExameDescicaoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<ExameDescicaoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    class ExameForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface ExameForm {
-        IdPaciente: Serenity.IntegerEditor;
-        Crm: Serenity.StringEditor;
-        IdExameDescricao: Serenity.IntegerEditor;
-        Resultado: Serenity.DecimalEditor;
-    }
-}
-declare namespace HBIS.ADD {
-    interface ExameRow {
-        IdExame?: number;
-        IdPaciente?: number;
-        Crm?: string;
-        IdExameDescricao?: number;
-        Resultado?: number;
-        IdPacienteIdSexo?: number;
-        IdPacienteIdTipoSanguineo?: number;
-        IdPacienteAltura?: number;
-        IdPacienteContatoEmergencia?: string;
-        IdPacienteDataNascimento?: string;
-        IdPacienteEmail?: string;
-        IdPacienteFatorCorrecao?: number;
-        IdPacienteGlicemiaIdeal?: number;
-        IdPacienteInsulinaBasal?: number;
-        IdPacienteInsulinaRapida?: number;
-        IdPacienteNome?: string;
-        IdPacientePeso?: number;
-        CrmCpf?: string;
-        CrmNome?: string;
-        CrmEmail?: string;
-        IdExameDescricaoDescricao?: string;
-    }
-    namespace ExameRow {
-        const idProperty = "IdExame";
-        const nameProperty = "Crm";
-        const localTextPrefix = "ADD.Exame";
-        namespace Fields {
-            const IdExame: any;
-            const IdPaciente: any;
-            const Crm: any;
-            const IdExameDescricao: any;
-            const Resultado: any;
-            const IdPacienteIdSexo: any;
-            const IdPacienteIdTipoSanguineo: any;
-            const IdPacienteAltura: any;
-            const IdPacienteContatoEmergencia: any;
-            const IdPacienteDataNascimento: any;
-            const IdPacienteEmail: any;
-            const IdPacienteFatorCorrecao: any;
-            const IdPacienteGlicemiaIdeal: any;
-            const IdPacienteInsulinaBasal: any;
-            const IdPacienteInsulinaRapida: any;
-            const IdPacienteNome: any;
-            const IdPacientePeso: any;
-            const CrmCpf: any;
-            const CrmNome: any;
-            const CrmEmail: any;
-            const IdExameDescricaoDescricao: any;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    namespace ExameService {
-        const baseUrl = "ADD/Exame";
-        function Create(request: Serenity.SaveRequest<ExameRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<ExameRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<ExameRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<ExameRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    class HistoricoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface HistoricoForm {
-        IdPaciente: Serenity.IntegerEditor;
-        Carboidrato: Serenity.DecimalEditor;
-        Data: Serenity.DateEditor;
-        GlicemiaAtual: Serenity.DecimalEditor;
-        Insulina: Serenity.DecimalEditor;
-    }
-}
-declare namespace HBIS.ADD {
-    interface HistoricoRow {
-        IdHistorico?: number;
-        IdPaciente?: number;
-        Carboidrato?: number;
-        Data?: string;
-        GlicemiaAtual?: number;
-        Insulina?: number;
-        IdPacienteIdSexo?: number;
-        IdPacienteIdTipoSanguineo?: number;
-        IdPacienteAltura?: number;
-        IdPacienteContatoEmergencia?: string;
-        IdPacienteDataNascimento?: string;
-        IdPacienteEmail?: string;
-        IdPacienteFatorCorrecao?: number;
-        IdPacienteGlicemiaIdeal?: number;
-        IdPacienteInsulinaBasal?: number;
-        IdPacienteInsulinaRapida?: number;
-        IdPacienteNome?: string;
-        IdPacientePeso?: number;
-    }
-    namespace HistoricoRow {
-        const idProperty = "IdHistorico";
-        const localTextPrefix = "ADD.Historico";
-        namespace Fields {
-            const IdHistorico: any;
-            const IdPaciente: any;
-            const Carboidrato: any;
-            const Data: any;
-            const GlicemiaAtual: any;
-            const Insulina: any;
-            const IdPacienteIdSexo: any;
-            const IdPacienteIdTipoSanguineo: any;
-            const IdPacienteAltura: any;
-            const IdPacienteContatoEmergencia: any;
-            const IdPacienteDataNascimento: any;
-            const IdPacienteEmail: any;
-            const IdPacienteFatorCorrecao: any;
-            const IdPacienteGlicemiaIdeal: any;
-            const IdPacienteInsulinaBasal: any;
-            const IdPacienteInsulinaRapida: any;
-            const IdPacienteNome: any;
-            const IdPacientePeso: any;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    namespace HistoricoService {
-        const baseUrl = "ADD/Historico";
-        function Create(request: Serenity.SaveRequest<HistoricoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<HistoricoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<HistoricoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<HistoricoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    class MedicoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface MedicoForm {
-        Cpf: Serenity.StringEditor;
-        Nome: Serenity.StringEditor;
-        Email: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.ADD {
-    interface MedicoRow {
-        Crm?: string;
-        Cpf?: string;
-        Nome?: string;
-        Email?: string;
-    }
-    namespace MedicoRow {
-        const idProperty = "Crm";
-        const nameProperty = "Crm";
-        const localTextPrefix = "ADD.Medico";
-        namespace Fields {
-            const Crm: any;
-            const Cpf: any;
-            const Nome: any;
-            const Email: any;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    namespace MedicoService {
-        const baseUrl = "ADD/Medico";
-        function Create(request: Serenity.SaveRequest<MedicoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<MedicoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<MedicoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<MedicoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    class PacienteForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface PacienteForm {
-        IdSexo: Serenity.IntegerEditor;
-        IdTipoSanguineo: Serenity.IntegerEditor;
-        Altura: Serenity.DecimalEditor;
-        ContatoEmergencia: Serenity.StringEditor;
-        DataNascimento: Serenity.DateEditor;
-        Email: Serenity.StringEditor;
-        FatorCorrecao: Serenity.DecimalEditor;
-        GlicemiaIdeal: Serenity.DecimalEditor;
-        InsulinaBasal: Serenity.DecimalEditor;
-        InsulinaRapida: Serenity.DecimalEditor;
-        Nome: Serenity.StringEditor;
-        Peso: Serenity.DecimalEditor;
-    }
-}
-declare namespace HBIS.ADD {
-    interface PacienteRow {
-        IdPaciente?: number;
-        IdSexo?: number;
-        IdTipoSanguineo?: number;
-        Altura?: number;
-        ContatoEmergencia?: string;
-        DataNascimento?: string;
-        Email?: string;
-        FatorCorrecao?: number;
-        GlicemiaIdeal?: number;
-        InsulinaBasal?: number;
-        InsulinaRapida?: number;
-        Nome?: string;
-        Peso?: number;
-        IdSexoDescricao?: string;
-        IdTipoSanguineoDescricao?: string;
-    }
-    namespace PacienteRow {
-        const idProperty = "IdPaciente";
-        const nameProperty = "ContatoEmergencia";
-        const localTextPrefix = "ADD.Paciente";
-        namespace Fields {
-            const IdPaciente: any;
-            const IdSexo: any;
-            const IdTipoSanguineo: any;
-            const Altura: any;
-            const ContatoEmergencia: any;
-            const DataNascimento: any;
-            const Email: any;
-            const FatorCorrecao: any;
-            const GlicemiaIdeal: any;
-            const InsulinaBasal: any;
-            const InsulinaRapida: any;
-            const Nome: any;
-            const Peso: any;
-            const IdSexoDescricao: any;
-            const IdTipoSanguineoDescricao: any;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    namespace PacienteService {
-        const baseUrl = "ADD/Paciente";
-        function Create(request: Serenity.SaveRequest<PacienteRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<PacienteRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<PacienteRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<PacienteRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    class SexoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface SexoForm {
-        Descricao: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.ADD {
-    interface SexoRow {
-        IdSexo?: number;
-        Descricao?: string;
-    }
-    namespace SexoRow {
-        const idProperty = "IdSexo";
-        const nameProperty = "Descricao";
-        const localTextPrefix = "ADD.Sexo";
-        namespace Fields {
-            const IdSexo: any;
-            const Descricao: any;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    namespace SexoService {
-        const baseUrl = "ADD/Sexo";
-        function Create(request: Serenity.SaveRequest<SexoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<SexoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<SexoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<SexoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    class TipoSanguineoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface TipoSanguineoForm {
-        Descricao: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.ADD {
-    interface TipoSanguineoRow {
-        IdTipoSanguineo?: number;
-        Descricao?: string;
-    }
-    namespace TipoSanguineoRow {
-        const idProperty = "IdTipoSanguineo";
-        const nameProperty = "Descricao";
-        const localTextPrefix = "ADD.TipoSanguineo";
-        namespace Fields {
-            const IdTipoSanguineo: any;
-            const Descricao: any;
-        }
-    }
-}
-declare namespace HBIS.ADD {
-    namespace TipoSanguineoService {
-        const baseUrl = "ADD/TipoSanguineo";
-        function Create(request: Serenity.SaveRequest<TipoSanguineoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<TipoSanguineoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<TipoSanguineoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<TipoSanguineoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
 declare namespace HBIS.Administration {
 }
 declare namespace HBIS.Administration {
@@ -817,402 +418,93 @@ declare namespace HBIS.Common {
         Value?: string;
     }
 }
-declare namespace HBIS.CRUD {
-    class ExameDescicaoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface ExameDescicaoForm {
-        Descricao: Serenity.StringEditor;
-    }
+declare namespace HBIS.Exame {
 }
-declare namespace HBIS.CRUD {
-    interface ExameDescicaoRow {
-        IdExameDescricao?: string;
-        Descricao?: string;
-    }
-    namespace ExameDescicaoRow {
-        const idProperty = "IdExameDescricao";
-        const nameProperty = "Descricao";
-        const localTextPrefix = "CRUD.ExameDescicao";
-        namespace Fields {
-            const IdExameDescricao: any;
-            const Descricao: any;
-        }
-    }
-}
-declare namespace HBIS.CRUD {
-    namespace ExameDescicaoService {
-        const baseUrl = "CRUD/ExameDescicao";
-        function Create(request: Serenity.SaveRequest<ExameDescicaoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<ExameDescicaoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<ExameDescicaoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<ExameDescicaoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.CRUD {
-    class ExameForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
+declare namespace HBIS.Exame {
     interface ExameForm {
-        IdPaciente: Serenity.StringEditor;
-        IdExameDescicao: Serenity.StringEditor;
+        Cpf: Serenity.StringEditor;
         Crm: Serenity.StringEditor;
+        IdData: Serenity.StringEditor;
+        IdExameDescricao: Serenity.IntegerEditor;
         Resultado: Serenity.DecimalEditor;
     }
+    class ExameForm extends Serenity.PrefixedContext {
+        static formKey: string;
+        private static init;
+        constructor(prefix: string);
+    }
 }
-declare namespace HBIS.CRUD {
+declare namespace HBIS.Exame {
     interface ExameRow {
-        IdExame?: string;
-        IdPaciente?: string;
-        IdExameDescicao?: string;
+        IdExame?: number;
+        Cpf?: string;
         Crm?: string;
+        IdData?: string;
+        IdExameDescricao?: number;
         Resultado?: number;
-        IdPacienteIdSexo?: string;
-        IdPacienteIdTipoSanguineo?: string;
-        IdPacienteAltura?: number;
-        IdPacienteContatoEmergencia?: string;
-        IdPacienteDataNascimento?: string;
-        IdPacienteEmail?: string;
-        IdPacienteFatorCorrecao?: number;
-        IdPacienteGlicemiaIdeal?: number;
-        IdPacienteInsulinaBasal?: number;
-        IdPacienteInsulinaRapida?: number;
-        IdPacienteNome?: string;
-        IdPacientePeso?: number;
-        IdExameDescicaoDescricao?: string;
-        CrmCpf?: string;
+        CpfIdSexo?: number;
+        CpfIdTipoSanguineo?: number;
+        CpfNome?: string;
+        CpfAltura?: number;
+        CpfPeso?: number;
+        CpfDataNascimento?: string;
+        CpfEmail?: string;
+        CpfGlicemiaIdeal?: number;
         CrmNome?: string;
         CrmEmail?: string;
+        IdDataIdAno?: number;
+        IdDataIdMes?: number;
+        IdDataIdDia?: number;
+        IdExameDescricaoDescricao?: string;
+        IdExameDescricaoValorMinimo?: number;
+        IdExameDescricaoValorMaximo?: number;
+        IdExameDescricaoUnidade?: string;
     }
     namespace ExameRow {
         const idProperty = "IdExame";
-        const nameProperty = "Crm";
-        const localTextPrefix = "CRUD.Exame";
-        namespace Fields {
-            const IdExame: any;
-            const IdPaciente: any;
-            const IdExameDescicao: any;
-            const Crm: any;
-            const Resultado: any;
-            const IdPacienteIdSexo: any;
-            const IdPacienteIdTipoSanguineo: any;
-            const IdPacienteAltura: any;
-            const IdPacienteContatoEmergencia: any;
-            const IdPacienteDataNascimento: any;
-            const IdPacienteEmail: any;
-            const IdPacienteFatorCorrecao: any;
-            const IdPacienteGlicemiaIdeal: any;
-            const IdPacienteInsulinaBasal: any;
-            const IdPacienteInsulinaRapida: any;
-            const IdPacienteNome: any;
-            const IdPacientePeso: any;
-            const IdExameDescicaoDescricao: any;
-            const CrmCpf: any;
-            const CrmNome: any;
-            const CrmEmail: any;
+        const nameProperty = "Cpf";
+        const localTextPrefix = "Exame.Exame";
+        const enum Fields {
+            IdExame = "IdExame",
+            Cpf = "Cpf",
+            Crm = "Crm",
+            IdData = "IdData",
+            IdExameDescricao = "IdExameDescricao",
+            Resultado = "Resultado",
+            CpfIdSexo = "CpfIdSexo",
+            CpfIdTipoSanguineo = "CpfIdTipoSanguineo",
+            CpfNome = "CpfNome",
+            CpfAltura = "CpfAltura",
+            CpfPeso = "CpfPeso",
+            CpfDataNascimento = "CpfDataNascimento",
+            CpfEmail = "CpfEmail",
+            CpfGlicemiaIdeal = "CpfGlicemiaIdeal",
+            CrmNome = "CrmNome",
+            CrmEmail = "CrmEmail",
+            IdDataIdAno = "IdDataIdAno",
+            IdDataIdMes = "IdDataIdMes",
+            IdDataIdDia = "IdDataIdDia",
+            IdExameDescricaoDescricao = "IdExameDescricaoDescricao",
+            IdExameDescricaoValorMinimo = "IdExameDescricaoValorMinimo",
+            IdExameDescricaoValorMaximo = "IdExameDescricaoValorMaximo",
+            IdExameDescricaoUnidade = "IdExameDescricaoUnidade"
         }
     }
 }
-declare namespace HBIS.CRUD {
+declare namespace HBIS.Exame {
     namespace ExameService {
-        const baseUrl = "CRUD/Exame";
+        const baseUrl = "Exame/Exame";
         function Create(request: Serenity.SaveRequest<ExameRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
         function Update(request: Serenity.SaveRequest<ExameRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
         function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
         function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<ExameRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
         function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<ExameRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.CRUD {
-    class HistoricoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface HistoricoForm {
-        IdPaciente: Serenity.StringEditor;
-        Carboidrato: Serenity.DecimalEditor;
-        Data: Serenity.DateEditor;
-        GlicemiaAtual: Serenity.DecimalEditor;
-        Insulina: Serenity.DecimalEditor;
-    }
-}
-declare namespace HBIS.CRUD {
-    interface HistoricoRow {
-        IdHistorico?: string;
-        IdPaciente?: string;
-        Carboidrato?: number;
-        Data?: string;
-        GlicemiaAtual?: number;
-        Insulina?: number;
-        IdPacienteIdSexo?: string;
-        IdPacienteIdTipoSanguineo?: string;
-        IdPacienteAltura?: number;
-        IdPacienteContatoEmergencia?: string;
-        IdPacienteDataNascimento?: string;
-        IdPacienteEmail?: string;
-        IdPacienteFatorCorrecao?: number;
-        IdPacienteGlicemiaIdeal?: number;
-        IdPacienteInsulinaBasal?: number;
-        IdPacienteInsulinaRapida?: number;
-        IdPacienteNome?: string;
-        IdPacientePeso?: number;
-    }
-    namespace HistoricoRow {
-        const idProperty = "IdHistorico";
-        const localTextPrefix = "CRUD.Historico";
-        namespace Fields {
-            const IdHistorico: any;
-            const IdPaciente: any;
-            const Carboidrato: any;
-            const Data: any;
-            const GlicemiaAtual: any;
-            const Insulina: any;
-            const IdPacienteIdSexo: any;
-            const IdPacienteIdTipoSanguineo: any;
-            const IdPacienteAltura: any;
-            const IdPacienteContatoEmergencia: any;
-            const IdPacienteDataNascimento: any;
-            const IdPacienteEmail: any;
-            const IdPacienteFatorCorrecao: any;
-            const IdPacienteGlicemiaIdeal: any;
-            const IdPacienteInsulinaBasal: any;
-            const IdPacienteInsulinaRapida: any;
-            const IdPacienteNome: any;
-            const IdPacientePeso: any;
-        }
-    }
-}
-declare namespace HBIS.CRUD {
-    namespace HistoricoService {
-        const baseUrl = "CRUD/Historico";
-        function Create(request: Serenity.SaveRequest<HistoricoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<HistoricoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<HistoricoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<HistoricoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.CRUD {
-    class MedicoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface MedicoForm {
-        Cpf: Serenity.StringEditor;
-        Nome: Serenity.StringEditor;
-        Email: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.CRUD {
-    interface MedicoRow {
-        Crm?: string;
-        Cpf?: string;
-        Nome?: string;
-        Email?: string;
-    }
-    namespace MedicoRow {
-        const idProperty = "Crm";
-        const nameProperty = "Crm";
-        const localTextPrefix = "CRUD.Medico";
-        namespace Fields {
-            const Crm: any;
-            const Cpf: any;
-            const Nome: any;
-            const Email: any;
-        }
-    }
-}
-declare namespace HBIS.CRUD {
-    namespace MedicoService {
-        const baseUrl = "CRUD/Medico";
-        function Create(request: Serenity.SaveRequest<MedicoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<MedicoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<MedicoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<MedicoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.CRUD {
-    class PacienteForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface PacienteForm {
-        IdSexo: Serenity.StringEditor;
-        IdTipoSanguineo: Serenity.StringEditor;
-        Altura: Serenity.DecimalEditor;
-        ContatoEmergencia: Serenity.StringEditor;
-        DataNascimento: Serenity.DateEditor;
-        Email: Serenity.StringEditor;
-        FatorCorrecao: Serenity.DecimalEditor;
-        GlicemiaIdeal: Serenity.DecimalEditor;
-        InsulinaBasal: Serenity.DecimalEditor;
-        InsulinaRapida: Serenity.DecimalEditor;
-        Nome: Serenity.StringEditor;
-        Peso: Serenity.DecimalEditor;
-    }
-}
-declare namespace HBIS.CRUD {
-    interface PacienteRow {
-        IdPaciente?: string;
-        IdSexo?: string;
-        IdTipoSanguineo?: string;
-        Altura?: number;
-        ContatoEmergencia?: string;
-        DataNascimento?: string;
-        Email?: string;
-        FatorCorrecao?: number;
-        GlicemiaIdeal?: number;
-        InsulinaBasal?: number;
-        InsulinaRapida?: number;
-        Nome?: string;
-        Peso?: number;
-        IdSexoDescricao?: string;
-        IdTipoSanguineoDescricao?: string;
-    }
-    namespace PacienteRow {
-        const idProperty = "IdPaciente";
-        const nameProperty = "ContatoEmergencia";
-        const localTextPrefix = "CRUD.Paciente";
-        namespace Fields {
-            const IdPaciente: any;
-            const IdSexo: any;
-            const IdTipoSanguineo: any;
-            const Altura: any;
-            const ContatoEmergencia: any;
-            const DataNascimento: any;
-            const Email: any;
-            const FatorCorrecao: any;
-            const GlicemiaIdeal: any;
-            const InsulinaBasal: any;
-            const InsulinaRapida: any;
-            const Nome: any;
-            const Peso: any;
-            const IdSexoDescricao: any;
-            const IdTipoSanguineoDescricao: any;
-        }
-    }
-}
-declare namespace HBIS.CRUD {
-    namespace PacienteService {
-        const baseUrl = "CRUD/Paciente";
-        function Create(request: Serenity.SaveRequest<PacienteRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<PacienteRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<PacienteRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<PacienteRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.CRUD {
-    class SexoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface SexoForm {
-        Descricao: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.CRUD {
-    interface SexoRow {
-        IdSexo?: string;
-        Descricao?: string;
-    }
-    namespace SexoRow {
-        const idProperty = "IdSexo";
-        const nameProperty = "Descricao";
-        const localTextPrefix = "CRUD.Sexo";
-        namespace Fields {
-            const IdSexo: any;
-            const Descricao: any;
-        }
-    }
-}
-declare namespace HBIS.CRUD {
-    namespace SexoService {
-        const baseUrl = "CRUD/Sexo";
-        function Create(request: Serenity.SaveRequest<SexoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<SexoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<SexoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<SexoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.CRUD {
-    class TipoSanguineoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface TipoSanguineoForm {
-        Descricao: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.CRUD {
-    interface TipoSanguineoRow {
-        IdTipoSanguineo?: string;
-        Descricao?: string;
-    }
-    namespace TipoSanguineoRow {
-        const idProperty = "IdTipoSanguineo";
-        const nameProperty = "Descricao";
-        const localTextPrefix = "CRUD.TipoSanguineo";
-        namespace Fields {
-            const IdTipoSanguineo: any;
-            const Descricao: any;
-        }
-    }
-}
-declare namespace HBIS.CRUD {
-    namespace TipoSanguineoService {
-        const baseUrl = "CRUD/TipoSanguineo";
-        function Create(request: Serenity.SaveRequest<TipoSanguineoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<TipoSanguineoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<TipoSanguineoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<TipoSanguineoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
+        const enum Methods {
+            Create = "Exame/Exame/Create",
+            Update = "Exame/Exame/Update",
+            Delete = "Exame/Exame/Delete",
+            Retrieve = "Exame/Exame/Retrieve",
+            List = "Exame/Exame/List"
         }
     }
 }
@@ -1238,6 +530,95 @@ declare namespace HBIS {
     interface GetNextNumberResponse extends Serenity.ServiceResponse {
         Number?: number;
         Serial?: string;
+    }
+}
+declare namespace HBIS.Historico {
+}
+declare namespace HBIS.Historico {
+    interface HistoricoForm {
+        Cpf: Serenity.StringEditor;
+        IdPeriodo: Serenity.IntegerEditor;
+        IdData: Serenity.StringEditor;
+        GlicemiaAntes: Serenity.DecimalEditor;
+        GlicemiaDepois: Serenity.DecimalEditor;
+        InsulinaTotal: Serenity.DecimalEditor;
+        Status: Serenity.StringEditor;
+        GlicemiaIdeal: Serenity.DecimalEditor;
+    }
+    class HistoricoForm extends Serenity.PrefixedContext {
+        static formKey: string;
+        private static init;
+        constructor(prefix: string);
+    }
+}
+declare namespace HBIS.Historico {
+    interface HistoricoRow {
+        IdHistorico?: number;
+        Cpf?: string;
+        IdPeriodo?: number;
+        IdData?: string;
+        GlicemiaAntes?: number;
+        GlicemiaDepois?: number;
+        InsulinaTotal?: number;
+        Status?: string;
+        GlicemiaIdeal?: number;
+        CpfIdSexo?: number;
+        CpfIdTipoSanguineo?: number;
+        CpfNome?: string;
+        CpfAltura?: number;
+        CpfPeso?: number;
+        CpfDataNascimento?: string;
+        CpfEmail?: string;
+        CpfGlicemiaIdeal?: number;
+        IdPeriodoDescricao?: string;
+        IdDataIdAno?: number;
+        IdDataIdMes?: number;
+        IdDataIdDia?: number;
+    }
+    namespace HistoricoRow {
+        const idProperty = "IdHistorico";
+        const nameProperty = "Cpf";
+        const localTextPrefix = "Historico.Historico";
+        const enum Fields {
+            IdHistorico = "IdHistorico",
+            Cpf = "Cpf",
+            IdPeriodo = "IdPeriodo",
+            IdData = "IdData",
+            GlicemiaAntes = "GlicemiaAntes",
+            GlicemiaDepois = "GlicemiaDepois",
+            InsulinaTotal = "InsulinaTotal",
+            Status = "Status",
+            GlicemiaIdeal = "GlicemiaIdeal",
+            CpfIdSexo = "CpfIdSexo",
+            CpfIdTipoSanguineo = "CpfIdTipoSanguineo",
+            CpfNome = "CpfNome",
+            CpfAltura = "CpfAltura",
+            CpfPeso = "CpfPeso",
+            CpfDataNascimento = "CpfDataNascimento",
+            CpfEmail = "CpfEmail",
+            CpfGlicemiaIdeal = "CpfGlicemiaIdeal",
+            IdPeriodoDescricao = "IdPeriodoDescricao",
+            IdDataIdAno = "IdDataIdAno",
+            IdDataIdMes = "IdDataIdMes",
+            IdDataIdDia = "IdDataIdDia"
+        }
+    }
+}
+declare namespace HBIS.Historico {
+    namespace HistoricoService {
+        const baseUrl = "Historico/Historico";
+        function Create(request: Serenity.SaveRequest<HistoricoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Update(request: Serenity.SaveRequest<HistoricoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<HistoricoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<HistoricoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        const enum Methods {
+            Create = "Historico/Historico/Create",
+            Update = "Historico/Historico/Update",
+            Delete = "Historico/Historico/Delete",
+            Retrieve = "Historico/Historico/Retrieve",
+            List = "Historico/Historico/List"
+        }
     }
 }
 declare namespace HBIS.Membership {
@@ -1330,757 +711,72 @@ declare namespace HBIS.Membership {
         Password?: string;
     }
 }
-declare namespace HBIS.OLAP {
-    class ExameDescicaoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface ExameDescicaoForm {
-        Descricao: Serenity.StringEditor;
-    }
+declare namespace HBIS.Paciente {
 }
-declare namespace HBIS.OLAP {
-    interface ExameDescicaoRow {
-        IdExameDescricao?: number;
-        Descricao?: string;
-    }
-    namespace ExameDescicaoRow {
-        const idProperty = "IdExameDescricao";
-        const nameProperty = "Descricao";
-        const localTextPrefix = "OLAP.ExameDescicao";
-        namespace Fields {
-            const IdExameDescricao: any;
-            const Descricao: any;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    namespace ExameDescicaoService {
-        const baseUrl = "OLAP/ExameDescicao";
-        function Create(request: Serenity.SaveRequest<ExameDescicaoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<ExameDescicaoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<ExameDescicaoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<ExameDescicaoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    class ExameForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface ExameForm {
-        IdPaciente: Serenity.IntegerEditor;
-        Crm: Serenity.StringEditor;
-        IdExameDescricao: Serenity.IntegerEditor;
-        Resultado: Serenity.DecimalEditor;
-    }
-}
-declare namespace HBIS.OLAP {
-    interface ExameRow {
-        IdExame?: number;
-        IdPaciente?: number;
-        Crm?: string;
-        IdExameDescricao?: number;
-        Resultado?: number;
-        IdPacienteIdSexo?: number;
-        IdPacienteIdTipoSanguineo?: number;
-        IdPacienteAltura?: number;
-        IdPacienteContatoEmergencia?: string;
-        IdPacienteDataNascimento?: string;
-        IdPacienteEmail?: string;
-        IdPacienteFatorCorrecao?: number;
-        IdPacienteGlicemiaIdeal?: number;
-        IdPacienteInsulinaBasal?: number;
-        IdPacienteInsulinaRapida?: number;
-        IdPacienteNome?: string;
-        IdPacientePeso?: number;
-        CrmCpf?: string;
-        CrmNome?: string;
-        CrmEmail?: string;
-        IdExameDescricaoDescricao?: string;
-    }
-    namespace ExameRow {
-        const idProperty = "IdExame";
-        const nameProperty = "Crm";
-        const localTextPrefix = "OLAP.Exame";
-        namespace Fields {
-            const IdExame: any;
-            const IdPaciente: any;
-            const Crm: any;
-            const IdExameDescricao: any;
-            const Resultado: any;
-            const IdPacienteIdSexo: any;
-            const IdPacienteIdTipoSanguineo: any;
-            const IdPacienteAltura: any;
-            const IdPacienteContatoEmergencia: any;
-            const IdPacienteDataNascimento: any;
-            const IdPacienteEmail: any;
-            const IdPacienteFatorCorrecao: any;
-            const IdPacienteGlicemiaIdeal: any;
-            const IdPacienteInsulinaBasal: any;
-            const IdPacienteInsulinaRapida: any;
-            const IdPacienteNome: any;
-            const IdPacientePeso: any;
-            const CrmCpf: any;
-            const CrmNome: any;
-            const CrmEmail: any;
-            const IdExameDescricaoDescricao: any;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    namespace ExameService {
-        const baseUrl = "OLAP/Exame";
-        function Create(request: Serenity.SaveRequest<ExameRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<ExameRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<ExameRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<ExameRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    class HistoricoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface HistoricoForm {
-        IdPaciente: Serenity.IntegerEditor;
-        Carboidrato: Serenity.DecimalEditor;
-        Data: Serenity.DateEditor;
-        GlicemiaAtual: Serenity.DecimalEditor;
-        Insulina: Serenity.DecimalEditor;
-    }
-}
-declare namespace HBIS.OLAP {
-    interface HistoricoRow {
-        IdHistorico?: number;
-        IdPaciente?: number;
-        Carboidrato?: number;
-        Data?: string;
-        GlicemiaAtual?: number;
-        Insulina?: number;
-        IdPacienteIdSexo?: number;
-        IdPacienteIdTipoSanguineo?: number;
-        IdPacienteAltura?: number;
-        IdPacienteContatoEmergencia?: string;
-        IdPacienteDataNascimento?: string;
-        IdPacienteEmail?: string;
-        IdPacienteFatorCorrecao?: number;
-        IdPacienteGlicemiaIdeal?: number;
-        IdPacienteInsulinaBasal?: number;
-        IdPacienteInsulinaRapida?: number;
-        IdPacienteNome?: string;
-        IdPacientePeso?: number;
-    }
-    namespace HistoricoRow {
-        const idProperty = "IdHistorico";
-        const localTextPrefix = "OLAP.Historico";
-        namespace Fields {
-            const IdHistorico: any;
-            const IdPaciente: any;
-            const Carboidrato: any;
-            const Data: any;
-            const GlicemiaAtual: any;
-            const Insulina: any;
-            const IdPacienteIdSexo: any;
-            const IdPacienteIdTipoSanguineo: any;
-            const IdPacienteAltura: any;
-            const IdPacienteContatoEmergencia: any;
-            const IdPacienteDataNascimento: any;
-            const IdPacienteEmail: any;
-            const IdPacienteFatorCorrecao: any;
-            const IdPacienteGlicemiaIdeal: any;
-            const IdPacienteInsulinaBasal: any;
-            const IdPacienteInsulinaRapida: any;
-            const IdPacienteNome: any;
-            const IdPacientePeso: any;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    namespace HistoricoService {
-        const baseUrl = "OLAP/Historico";
-        function Create(request: Serenity.SaveRequest<HistoricoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<HistoricoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<HistoricoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<HistoricoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    class MedicoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface MedicoForm {
-        Cpf: Serenity.StringEditor;
-        Nome: Serenity.StringEditor;
-        Email: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.OLAP {
-    interface MedicoRow {
-        Crm?: string;
-        Cpf?: string;
-        Nome?: string;
-        Email?: string;
-    }
-    namespace MedicoRow {
-        const idProperty = "Crm";
-        const nameProperty = "Crm";
-        const localTextPrefix = "OLAP.Medico";
-        namespace Fields {
-            const Crm: any;
-            const Cpf: any;
-            const Nome: any;
-            const Email: any;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    namespace MedicoService {
-        const baseUrl = "OLAP/Medico";
-        function Create(request: Serenity.SaveRequest<MedicoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<MedicoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<MedicoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<MedicoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    class PacienteForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
+declare namespace HBIS.Paciente {
     interface PacienteForm {
-        IdPaciente: Serenity.IntegerEditor;
         IdSexo: Serenity.IntegerEditor;
+        IdTipoSanguineo: Serenity.IntegerEditor;
+        Nome: Serenity.StringEditor;
         Altura: Serenity.DecimalEditor;
-        ContatoEmergencia: Serenity.StringEditor;
+        Peso: Serenity.DecimalEditor;
         DataNascimento: Serenity.DateEditor;
         Email: Serenity.StringEditor;
-        FatorCorrecao: Serenity.DecimalEditor;
         GlicemiaIdeal: Serenity.DecimalEditor;
-        InsulinaBasal: Serenity.DecimalEditor;
-        InsulinaRapida: Serenity.DecimalEditor;
-        Nome: Serenity.StringEditor;
-        Peso: Serenity.DecimalEditor;
+    }
+    class PacienteForm extends Serenity.PrefixedContext {
+        static formKey: string;
+        private static init;
+        constructor(prefix: string);
     }
 }
-declare namespace HBIS.OLAP {
+declare namespace HBIS.Paciente {
     interface PacienteRow {
-        IdPaciente?: number;
+        Cpf?: string;
         IdSexo?: number;
         IdTipoSanguineo?: number;
+        Nome?: string;
         Altura?: number;
-        ContatoEmergencia?: string;
+        Peso?: number;
         DataNascimento?: string;
         Email?: string;
-        FatorCorrecao?: number;
         GlicemiaIdeal?: number;
-        InsulinaBasal?: number;
-        InsulinaRapida?: number;
-        Nome?: string;
-        Peso?: number;
         IdSexoDescricao?: string;
         IdTipoSanguineoDescricao?: string;
     }
     namespace PacienteRow {
-        const idProperty = "IdTipoSanguineo";
-        const nameProperty = "ContatoEmergencia";
-        const localTextPrefix = "OLAP.Paciente";
-        namespace Fields {
-            const IdPaciente: any;
-            const IdSexo: any;
-            const IdTipoSanguineo: any;
-            const Altura: any;
-            const ContatoEmergencia: any;
-            const DataNascimento: any;
-            const Email: any;
-            const FatorCorrecao: any;
-            const GlicemiaIdeal: any;
-            const InsulinaBasal: any;
-            const InsulinaRapida: any;
-            const Nome: any;
-            const Peso: any;
-            const IdSexoDescricao: any;
-            const IdTipoSanguineoDescricao: any;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    namespace PacienteService {
-        const baseUrl = "OLAP/Paciente";
-        function Create(request: Serenity.SaveRequest<PacienteRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<PacienteRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<PacienteRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<PacienteRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    class SexoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface SexoForm {
-        Descricao: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.OLAP {
-    interface SexoRow {
-        IdSexo?: number;
-        Descricao?: string;
-    }
-    namespace SexoRow {
-        const idProperty = "IdSexo";
-        const nameProperty = "Descricao";
-        const localTextPrefix = "OLAP.Sexo";
-        namespace Fields {
-            const IdSexo: any;
-            const Descricao: any;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    namespace SexoService {
-        const baseUrl = "OLAP/Sexo";
-        function Create(request: Serenity.SaveRequest<SexoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<SexoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<SexoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<SexoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    class TipoSanguineoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface TipoSanguineoForm {
-        Descricao: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.OLAP {
-    interface TipoSanguineoRow {
-        IdTipoSanguineo?: number;
-        Descricao?: string;
-    }
-    namespace TipoSanguineoRow {
-        const idProperty = "IdTipoSanguineo";
-        const nameProperty = "Descricao";
-        const localTextPrefix = "OLAP.TipoSanguineo";
-        namespace Fields {
-            const IdTipoSanguineo: any;
-            const Descricao: any;
-        }
-    }
-}
-declare namespace HBIS.OLAP {
-    namespace TipoSanguineoService {
-        const baseUrl = "OLAP/TipoSanguineo";
-        function Create(request: Serenity.SaveRequest<TipoSanguineoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<TipoSanguineoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<TipoSanguineoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<TipoSanguineoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-}
-declare namespace HBIS.OLTP {
-    class ExameDescicaoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface ExameDescicaoForm {
-        Descricao: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.OLTP {
-    interface ExameDescicaoRow {
-        IdExameDescricao?: string;
-        Descricao?: string;
-    }
-    namespace ExameDescicaoRow {
-        const idProperty = "IdExameDescricao";
-        const nameProperty = "Descricao";
-        const localTextPrefix = "OLTP.ExameDescicao";
-        namespace Fields {
-            const IdExameDescricao: any;
-            const Descricao: any;
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-    namespace ExameDescicaoService {
-        const baseUrl = "OLTP/ExameDescicao";
-        function Create(request: Serenity.SaveRequest<ExameDescicaoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<ExameDescicaoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<ExameDescicaoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<ExameDescicaoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-    interface ExameForm {
-        IdPaciente: Serenity.StringEditor;
-        Crm: Serenity.StringEditor;
-        TituloExame: Serenity.StringEditor;
-        Resultado: Serenity.DecimalEditor;
-    }
-    class ExameForm extends Serenity.PrefixedContext {
-        static formKey: string;
-        private static init;
-        constructor(prefix: string);
-    }
-}
-declare namespace HBIS.OLTP {
-    interface ExameRow {
-        IdExame?: string;
-        IdPaciente?: string;
-        Crm?: string;
-        TituloExame?: string;
-        Resultado?: number;
-    }
-    namespace ExameRow {
-        const idProperty = "IdExame";
-        const nameProperty = "Crm";
-        const localTextPrefix = "OLTP.Exame";
+        const idProperty = "Cpf";
+        const nameProperty = "Cpf";
+        const localTextPrefix = "Paciente.Paciente";
         const enum Fields {
-            IdExame = "IdExame",
-            IdPaciente = "IdPaciente",
-            Crm = "Crm",
-            TituloExame = "TituloExame",
-            Resultado = "Resultado"
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-    namespace ExameService {
-        const baseUrl = "OLTP/Exame";
-        function Create(request: Serenity.SaveRequest<ExameRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<ExameRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<ExameRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<ExameRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        const enum Methods {
-            Create = "OLTP/Exame/Create",
-            Update = "OLTP/Exame/Update",
-            Delete = "OLTP/Exame/Delete",
-            Retrieve = "OLTP/Exame/Retrieve",
-            List = "OLTP/Exame/List"
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-}
-declare namespace HBIS.OLTP {
-    interface HistoricoForm {
-        IdPaciente: Serenity.StringEditor;
-        Carboidrato: Serenity.DecimalEditor;
-        Data: Serenity.DateEditor;
-        GlicemiaAtual: Serenity.DecimalEditor;
-        Insulina: Serenity.DecimalEditor;
-    }
-    class HistoricoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-        private static init;
-        constructor(prefix: string);
-    }
-}
-declare namespace HBIS.OLTP {
-    interface HistoricoRow {
-        IdHistorico?: string;
-        IdPaciente?: string;
-        Carboidrato?: number;
-        Data?: string;
-        GlicemiaAtual?: number;
-        Insulina?: number;
-    }
-    namespace HistoricoRow {
-        const idProperty = "IdHistorico";
-        const localTextPrefix = "OLTP.Historico";
-        const enum Fields {
-            IdHistorico = "IdHistorico",
-            IdPaciente = "IdPaciente",
-            Carboidrato = "Carboidrato",
-            Data = "Data",
-            GlicemiaAtual = "GlicemiaAtual",
-            Insulina = "Insulina"
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-    namespace HistoricoService {
-        const baseUrl = "OLTP/Historico";
-        function Create(request: Serenity.SaveRequest<HistoricoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<HistoricoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<HistoricoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<HistoricoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        const enum Methods {
-            Create = "OLTP/Historico/Create",
-            Update = "OLTP/Historico/Update",
-            Delete = "OLTP/Historico/Delete",
-            Retrieve = "OLTP/Historico/Retrieve",
-            List = "OLTP/Historico/List"
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-}
-declare namespace HBIS.OLTP {
-    interface MedicoForm {
-        Cpf: Serenity.StringEditor;
-        Nome: Serenity.StringEditor;
-        Email: Serenity.StringEditor;
-    }
-    class MedicoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-        private static init;
-        constructor(prefix: string);
-    }
-}
-declare namespace HBIS.OLTP {
-    interface MedicoRow {
-        Crm?: string;
-        Cpf?: string;
-        Nome?: string;
-        Email?: string;
-    }
-    namespace MedicoRow {
-        const idProperty = "Crm";
-        const nameProperty = "Crm";
-        const localTextPrefix = "OLTP.Medico";
-        const enum Fields {
-            Crm = "Crm",
             Cpf = "Cpf",
+            IdSexo = "IdSexo",
+            IdTipoSanguineo = "IdTipoSanguineo",
             Nome = "Nome",
-            Email = "Email"
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-    namespace MedicoService {
-        const baseUrl = "OLTP/Medico";
-        function Create(request: Serenity.SaveRequest<MedicoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<MedicoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<MedicoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<MedicoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        const enum Methods {
-            Create = "OLTP/Medico/Create",
-            Update = "OLTP/Medico/Update",
-            Delete = "OLTP/Medico/Delete",
-            Retrieve = "OLTP/Medico/Retrieve",
-            List = "OLTP/Medico/List"
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-}
-declare namespace HBIS.OLTP {
-    interface PacienteForm {
-        Altura: Serenity.DecimalEditor;
-        ContatoEmergencia: Serenity.StringEditor;
-        DataNascimento: Serenity.DateEditor;
-        Email: Serenity.StringEditor;
-        FatorCorrecao: Serenity.DecimalEditor;
-        GlicemiaIdeal: Serenity.DecimalEditor;
-        InsulinaBasal: Serenity.DecimalEditor;
-        InsulinaRapida: Serenity.DecimalEditor;
-        Nome: Serenity.StringEditor;
-        Peso: Serenity.DecimalEditor;
-        Sexo: Serenity.StringEditor;
-        TipoSanguineo: Serenity.StringEditor;
-    }
-    class PacienteForm extends Serenity.PrefixedContext {
-        static formKey: string;
-        private static init;
-        constructor(prefix: string);
-    }
-}
-declare namespace HBIS.OLTP {
-    interface PacienteRow {
-        IdPaciente?: string;
-        Altura?: number;
-        ContatoEmergencia?: string;
-        DataNascimento?: string;
-        Email?: string;
-        FatorCorrecao?: number;
-        GlicemiaIdeal?: number;
-        InsulinaBasal?: number;
-        InsulinaRapida?: number;
-        Nome?: string;
-        Peso?: number;
-        Sexo?: string;
-        TipoSanguineo?: string;
-    }
-    namespace PacienteRow {
-        const idProperty = "IdPaciente";
-        const nameProperty = "ContatoEmergencia";
-        const localTextPrefix = "OLTP.Paciente";
-        const enum Fields {
-            IdPaciente = "IdPaciente",
             Altura = "Altura",
-            ContatoEmergencia = "ContatoEmergencia",
+            Peso = "Peso",
             DataNascimento = "DataNascimento",
             Email = "Email",
-            FatorCorrecao = "FatorCorrecao",
             GlicemiaIdeal = "GlicemiaIdeal",
-            InsulinaBasal = "InsulinaBasal",
-            InsulinaRapida = "InsulinaRapida",
-            Nome = "Nome",
-            Peso = "Peso",
-            Sexo = "Sexo",
-            TipoSanguineo = "TipoSanguineo"
+            IdSexoDescricao = "IdSexoDescricao",
+            IdTipoSanguineoDescricao = "IdTipoSanguineoDescricao"
         }
     }
 }
-declare namespace HBIS.OLTP {
+declare namespace HBIS.Paciente {
     namespace PacienteService {
-        const baseUrl = "OLTP/Paciente";
+        const baseUrl = "Paciente/Paciente";
         function Create(request: Serenity.SaveRequest<PacienteRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
         function Update(request: Serenity.SaveRequest<PacienteRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
         function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
         function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<PacienteRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
         function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<PacienteRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
         const enum Methods {
-            Create = "OLTP/Paciente/Create",
-            Update = "OLTP/Paciente/Update",
-            Delete = "OLTP/Paciente/Delete",
-            Retrieve = "OLTP/Paciente/Retrieve",
-            List = "OLTP/Paciente/List"
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-    class SexoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface SexoForm {
-        Descricao: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.OLTP {
-    interface SexoRow {
-        IdSexo?: string;
-        Descricao?: string;
-    }
-    namespace SexoRow {
-        const idProperty = "IdSexo";
-        const nameProperty = "Descricao";
-        const localTextPrefix = "OLTP.Sexo";
-        namespace Fields {
-            const IdSexo: any;
-            const Descricao: any;
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-    namespace SexoService {
-        const baseUrl = "OLTP/Sexo";
-        function Create(request: Serenity.SaveRequest<SexoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<SexoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<SexoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<SexoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-    class TipoSanguineoForm extends Serenity.PrefixedContext {
-        static formKey: string;
-    }
-    interface TipoSanguineoForm {
-        Descricao: Serenity.StringEditor;
-    }
-}
-declare namespace HBIS.OLTP {
-    interface TipoSanguineoRow {
-        IdTipoSanguineo?: string;
-        Descricao?: string;
-    }
-    namespace TipoSanguineoRow {
-        const idProperty = "IdTipoSanguineo";
-        const nameProperty = "Descricao";
-        const localTextPrefix = "OLTP.TipoSanguineo";
-        namespace Fields {
-            const IdTipoSanguineo: any;
-            const Descricao: any;
-        }
-    }
-}
-declare namespace HBIS.OLTP {
-    namespace TipoSanguineoService {
-        const baseUrl = "OLTP/TipoSanguineo";
-        function Create(request: Serenity.SaveRequest<TipoSanguineoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Update(request: Serenity.SaveRequest<TipoSanguineoRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<TipoSanguineoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<TipoSanguineoRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
-        namespace Methods {
-            const Create: string;
-            const Update: string;
-            const Delete: string;
-            const Retrieve: string;
-            const List: string;
+            Create = "Paciente/Paciente/Create",
+            Update = "Paciente/Paciente/Update",
+            Delete = "Paciente/Paciente/Delete",
+            Retrieve = "Paciente/Paciente/Retrieve",
+            List = "Paciente/Paciente/List"
         }
     }
 }
@@ -2098,145 +794,6 @@ declare namespace HBIS.LanguageList {
     function getValue(): string[][];
 }
 declare namespace HBIS.ScriptInitialization {
-}
-declare namespace HBIS.ADD {
-    class ExameDialog extends Serenity.EntityDialog<ExameRow, any> {
-        protected getFormKey(): string;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getNameProperty(): string;
-        protected getService(): string;
-        protected form: ExameForm;
-    }
-}
-declare namespace HBIS.ADD {
-    class ExameGrid extends Serenity.EntityGrid<ExameRow, any> {
-        protected getColumnsKey(): string;
-        protected getDialogType(): typeof ExameDialog;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getService(): string;
-        constructor(container: JQuery);
-    }
-}
-declare namespace HBIS.ADD {
-    class ExameDescicaoDialog extends Serenity.EntityDialog<ExameDescicaoRow, any> {
-        protected getFormKey(): string;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getNameProperty(): string;
-        protected getService(): string;
-        protected form: ExameDescicaoForm;
-    }
-}
-declare namespace HBIS.ADD {
-    class ExameDescicaoGrid extends Serenity.EntityGrid<ExameDescicaoRow, any> {
-        protected getColumnsKey(): string;
-        protected getDialogType(): typeof ExameDescicaoDialog;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getService(): string;
-        constructor(container: JQuery);
-    }
-}
-declare namespace HBIS.ADD {
-    class HistoricoDialog extends Serenity.EntityDialog<HistoricoRow, any> {
-        protected getFormKey(): string;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getService(): string;
-        protected form: HistoricoForm;
-    }
-}
-declare namespace HBIS.ADD {
-    class HistoricoGrid extends Serenity.EntityGrid<HistoricoRow, any> {
-        protected getColumnsKey(): string;
-        protected getDialogType(): typeof HistoricoDialog;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getService(): string;
-        constructor(container: JQuery);
-    }
-}
-declare namespace HBIS.ADD {
-    class MedicoDialog extends Serenity.EntityDialog<MedicoRow, any> {
-        protected getFormKey(): string;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getNameProperty(): string;
-        protected getService(): string;
-        protected form: MedicoForm;
-    }
-}
-declare namespace HBIS.ADD {
-    class MedicoGrid extends Serenity.EntityGrid<MedicoRow, any> {
-        protected getColumnsKey(): string;
-        protected getDialogType(): typeof MedicoDialog;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getService(): string;
-        constructor(container: JQuery);
-    }
-}
-declare namespace HBIS.ADD {
-    class PacienteDialog extends Serenity.EntityDialog<PacienteRow, any> {
-        protected getFormKey(): string;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getNameProperty(): string;
-        protected getService(): string;
-        protected form: PacienteForm;
-    }
-}
-declare namespace HBIS.ADD {
-    class PacienteGrid extends Serenity.EntityGrid<PacienteRow, any> {
-        protected getColumnsKey(): string;
-        protected getDialogType(): typeof PacienteDialog;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getService(): string;
-        constructor(container: JQuery);
-    }
-}
-declare namespace HBIS.ADD {
-    class SexoDialog extends Serenity.EntityDialog<SexoRow, any> {
-        protected getFormKey(): string;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getNameProperty(): string;
-        protected getService(): string;
-        protected form: SexoForm;
-    }
-}
-declare namespace HBIS.ADD {
-    class SexoGrid extends Serenity.EntityGrid<SexoRow, any> {
-        protected getColumnsKey(): string;
-        protected getDialogType(): typeof SexoDialog;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getService(): string;
-        constructor(container: JQuery);
-    }
-}
-declare namespace HBIS.ADD {
-    class TipoSanguineoDialog extends Serenity.EntityDialog<TipoSanguineoRow, any> {
-        protected getFormKey(): string;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getNameProperty(): string;
-        protected getService(): string;
-        protected form: TipoSanguineoForm;
-    }
-}
-declare namespace HBIS.ADD {
-    class TipoSanguineoGrid extends Serenity.EntityGrid<TipoSanguineoRow, any> {
-        protected getColumnsKey(): string;
-        protected getDialogType(): typeof TipoSanguineoDialog;
-        protected getIdProperty(): string;
-        protected getLocalTextPrefix(): string;
-        protected getService(): string;
-        constructor(container: JQuery);
-    }
 }
 declare namespace HBIS.Administration {
     class LanguageDialog extends Serenity.EntityDialog<LanguageRow, any> {
@@ -2649,6 +1206,66 @@ declare namespace HBIS.Common {
     class UserPreferenceStorage implements Serenity.SettingStorage {
         getItem(key: string): string;
         setItem(key: string, data: string): void;
+    }
+}
+declare namespace HBIS.Exame {
+    class ExameDialog extends Serenity.EntityDialog<ExameRow, any> {
+        protected getFormKey(): string;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getNameProperty(): string;
+        protected getService(): string;
+        protected form: ExameForm;
+    }
+}
+declare namespace HBIS.Exame {
+    class ExameGrid extends Serenity.EntityGrid<ExameRow, any> {
+        protected getColumnsKey(): string;
+        protected getDialogType(): typeof ExameDialog;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getService(): string;
+        constructor(container: JQuery);
+    }
+}
+declare namespace HBIS.Historico {
+    class HistoricoDialog extends Serenity.EntityDialog<HistoricoRow, any> {
+        protected getFormKey(): string;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getNameProperty(): string;
+        protected getService(): string;
+        protected form: HistoricoForm;
+    }
+}
+declare namespace HBIS.Historico {
+    class HistoricoGrid extends Serenity.EntityGrid<HistoricoRow, any> {
+        protected getColumnsKey(): string;
+        protected getDialogType(): typeof HistoricoDialog;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getService(): string;
+        constructor(container: JQuery);
+    }
+}
+declare namespace HBIS.Paciente {
+    class PacienteDialog extends Serenity.EntityDialog<PacienteRow, any> {
+        protected getFormKey(): string;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getNameProperty(): string;
+        protected getService(): string;
+        protected form: PacienteForm;
+    }
+}
+declare namespace HBIS.Paciente {
+    class PacienteGrid extends Serenity.EntityGrid<PacienteRow, any> {
+        protected getColumnsKey(): string;
+        protected getDialogType(): typeof PacienteDialog;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getService(): string;
+        constructor(container: JQuery);
     }
 }
 declare namespace HBIS.Authorization {

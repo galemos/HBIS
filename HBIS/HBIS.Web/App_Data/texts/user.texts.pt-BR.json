@@ -1,3 +1,6 @@
 {
-  "Forms.Membership.Login.FormTitle": "HIBS - Healthcare Business Intelligence System"
+  "Forms.Membership.Login.FormTitle": "HIBS - Healthcare Business Intelligence System",
+  "Navigation.Dashboard": "Dashboard",
+  "Site.Layout.FooterCopyright": "Copyright (c) 2018 - TCC - UNIP - Bruna, Gabriel, Guilher e Raphael.",
+  "Site.Layout.FooterInfo": "Healthcare Business Intelligence System"
 }
